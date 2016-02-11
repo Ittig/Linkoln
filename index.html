@@ -23,13 +23,22 @@
 
     <section class="main-content">
 <h3>
-<a id="progetto" class="anchor" href="#progetto" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-Il progetto</h3>
+<a id="linkoln" class="anchor" href="#linkoln" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+
+</h3>
+
+
+<p><strong>Linkoln</strong>, il software per l'estrazione automatica di riferimenti normativi dai testi legislativi italiani.</p>
+
+<p align='center'>
+<img src="LogoITTIG.png" height="80px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="Logo_del_Senato_della_Repubblica_Italiana.svg.png" height="80px">
+</p>
 
 <p>Il progetto, promosso e finanziato dal Servizio Informatica del Senato della Repubblica e realizzato 
 dall'Istituto di Teoria e Tecniche dell'Informazione Giuridica del CNR (ITTIG), è finalizzato allo sviluppo
-di un nuovo software per l'estrazione automatica dei riferimenti normativi dai testi legislativi che superi 
-i limiti di xmLegesLinker, il parser dei riferimenti normativi sviluppato e distribuito da ITTIG dal 2003.</p>
+di uno strumento che superi 
+i limiti di xmLegesLinker, il precedente parser di riferimenti normativi sviluppato e distribuito da Ittig dal 2003.</p>
 
 <p>
 Obiettivi primari del nuovo sviluppo sono: 
@@ -37,7 +46,7 @@ Obiettivi primari del nuovo sviluppo sono:
 <li>realizzazione di  una libreria in Java facilmente integrabile nei vari sistemi e applicazioni 
 rilasciata con codice sorgente aperto;</li>
 <li>superamento dei principali limiti dell'attuale parser (difficoltà di manutenzione e aggiornamento, 
-mancato riconoscimento delle citazioni multiple, rigidità nell' ordine dei campi del riferimento, 
+mancato riconoscimento delle citazioni multiple, rigidità nell'ordine dei campi del riferimento, 
 gestione degli alias, gestione dei riferimenti incompleti);</li>
 <li>supporto agli identificatori standard ed europei;</li>
 <li>allargamento della copertura delle autorità emananti;</li>
@@ -45,11 +54,59 @@ gestione degli alias, gestione dei riferimenti incompleti);</li>
 </ul>
 </p>
 
+
+
+
+<h3>
+<a id="partecipa" class="anchor" href="#partecipa" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+Partecipa</h3>
+
 <p>Il progetto si propone il coinvolgimento della comunità degli utilizzatori, a partire dai soggetti 
 istituzionali (Parlamento, Governo, Ministeri, Regioni, Autorità, Poligrafico), per la segnalazione 
 dei casi non coperti, dei bug e la richiesta di implementazione di nuove features, oltre alla 
 possibilità di accedere e contribuire al codice sorgente dell'applicazione. 
 </p>
+
+<p>
+E' possibile testare Linkoln su un testo legislativo in formato txt o html  utilizzando la form [Try Demo].  
+
+<p>Per incrementare la copertura e la precisione del riconoscimento segnala [link alla form] una citazione non riconosciuta, riconosciuta solo parzialmente o di cui è errata la costruzione dell'identificatore standard.
+
+<p>Invia il testo della citazione o il frammento di testo legislativo che la contiene utilizzando la form [link] e possibilmente specificando il tipo di errore. </p>
+
+
+<h3>
+<a id="link" class="anchor" href="link" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+Costruzione dei link</h3>
+
+<p>
+I riferimenti estratti dai testi sono rappresentati tramite degli identificatori standard per la legislazione 
+che consentono la risoluzione e il reperimento in rete del documento citato o di sue specifiche partizioni.
+Gli standard attualmente supportati da Linkoln sono: 
+</p>
+
+<ul>
+<li><strong>urn:nir</strong>, il formato in uso in Italia per l'identificazione delle risorse legislative, adottato e supportato anche dal portale della legislazione vigente Normattiva;
+</li>
+<li>
+<strong>CELEX</strong>, l'identificatore univoco dei documenti ospitati su EUR-Lex, il portale per l'accesso al diritto dell'Unione europea.
+</li>
+</ul>
+
+<p>
+È inoltre previsto l'allargamento del supporto a due ulteriori formati di identificazione, 
+non appena le specifiche saranno consolidate e adottate ufficialmente:
+</p>
+
+<ul>
+<li>
+<strong>urn:lex</strong>, la specifica internazionale nata come evoluzione dello standard urn:nir per l'attribuzione di un nome uniforme alle risorse giuridiche;
+</li>
+<li>
+<strong>ELI</strong> (European Legislation Identifier), l'identificatore unico della legislazione nazionale europea in formato <em>URI HTTP</em> che gli stati membri possono implementare su base volontaria definendo le proprie specifiche.
+</li>
+</ul>
+
 
 <h3>
 <a id="linkoln" class="anchor" href="#linkoln" aria-hidden="true"><span class="octicon octicon-link"></span></a>
@@ -58,46 +115,14 @@ Linkoln</h3>
 <p>To do.</p>
 
 
-<h3>
-<a id="link" class="anchor" href="link" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-Costruzione dei link</h3>
-
-<p>
-Le citazioni estratte dai testi sono rappresentate tramite gli identificatori standard per la legislazione 
-che consentono la risoluzione e il reperimento in rete del documento citato o di sue specfiche partizioni: 
-</p>
-
-<ul>
-<li>urn:nir [ref? non c'è] è il formato in uso in Italia per l'identificazione delle risorse legislative, adottato e supportato fra gli altri dal portale della legislazione vigente Normattiva;
-	esempio ?
-</li>
-<li>
-CELEX: [ref] Il numero CELEX è l'identificatore univoco di ciascun documento in EUR-Lex , il portale per l'accesso al diritto dell'Unione europea;
-
-	esempio ?
-</li>
-</ul>
-
-E' previsto -  non appena le specifiche per gli identificatori saranno consolidate e adottate ufficialmente - il supporto alla costruzione del link in due ulteriori formati:
-<ul>
-<li>
-urn:lex  [ref] è la specifica internazionale nata come evoluzione dello standard urn:nir per l'attribuzione di un nome uniforme alle risorse giuridiche;
-</li>
-<li>
-eli [ref]  (European Legislation Identifier) - è l'identificatore unico della legislazione nazionale europea in formato «URI HTTP» che gli stati membri possono implementare su base volontaria definendo le proprie specifiche;
-</li>
-</ul>
-
-La specializzazione e configurazione del modulo di Linkoln  dedicato alla "serializzazione"  del riferimento estratto (costruzione del link) consentirà il supporto alle diverse tipologie di identificatori legislativi.  
 
 <h3>
 <a id="copertura" class="anchor" href="#copertura" aria-hidden="true"><span class="octicon octicon-link"></span></a>
 Copertura e valutazione</h3>
 
+<p>Compito del software di riconoscimento delle citazioni legislative testuali è quello di garantire la massima copertura della estrema variabilità negli stili di citazione (ordine dei campi della citazione, uso di forme abbreviate, citazioni multiple, utilizzo di alias), delle diverse tipologie di documento citato e delle numerose possibili autorità emananti, inclusa la copertura dello storico e del pregresso. 
 
-<p>Compito del software di riconoscimento delle citazioni legislative testuali è quello di garantire la massima copertura della estrema variabilità negli stili di citazione (ordine dei campi della citazione, uso di forme abbreviate, citazioni multiple, utilizzo di alias) delle diverse tipologie di documento citato e delle numerose possibili autorità emananti, inclusa la copertura dello storico e del pregresso. 
-
-<p>In fase di analisi è stata individuata un'ampia casistica di forme di citazione testuale, tipologie di documento normativo e autorità emananti, anche grazie alle segnalazioni dei partner del progetto. 
+<p>In fase di analisi è stata individuata un'ampia casistica di forme di citazione testuale, tipologie di documento normativo e autorità emananti. 
 
 <p>Nella prima colonna della tabella [COVERAGE] è elencato un campione delle diverse forme di citazione testuale di cui è richiesta la copertura. 
 
@@ -105,17 +130,12 @@ Copertura e valutazione</h3>
 </p>
 
 
+
 <h3>
-<a id="partecipa" class="anchor" href="#partecipa" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-Partecipa</h3>
+<a id="licenza" class="anchor" href="#licenza" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+Licenza</h3>
 
-
-<p>Il progetto si propone il coinvolgimento della comunità degli utilizzatori per segnalazione di bug, ampliamento della copertura e richiesta di nuove funzionalità.
-E' possibile testare Linkoln su un testo legislativo in formato txt o html  utilizzando la form [Try Demo].  
-
-<p>Per incrementare la copertura e la precisione del riconoscimento segnala [link alla form] una citazione non riconosciuta, riconosciuta solo parzialmente o di cui è errata la costruzione dell'identificatore standard.
-
-<p>Invia il testo della citazione o il frammento di testo legislativo che la contiene utilizzando la form [link] e possibilmente specificando il tipo di errore. </p>
+<p>Linkoln è rilasciato con licenza GPL ver.3</p>
 
 
 <h3>

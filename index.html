@@ -35,22 +35,23 @@
 <img src="Logo_del_Senato_della_Repubblica_Italiana.svg.png" height="80px">
 </p>
 
-<p>Il progetto, promosso e finanziato dal Servizio Informatica del Senato della Repubblica e realizzato 
-dall'Istituto di Teoria e Tecniche dell'Informazione Giuridica del CNR (ITTIG), è finalizzato allo sviluppo
-di uno strumento che superi 
-i limiti di xmLegesLinker, il precedente parser di riferimenti normativi sviluppato e distribuito da Ittig dal 2003.</p>
+<p style="text-align:justify;">Il progetto, promosso e finanziato dal Servizio Informatica del 
+<a href="http://www.senato.it" target="_blank">Senato della Repubblica</a> e realizzato 
+dall'<a href="http://www.ittig.cnr.it" target="_blank">Istituto di Teoria e Tecniche dell'Informazione Giuridica del CNR (ITTIG)</a>, è finalizzato allo sviluppo
+di uno strumento che migliori le prestazioni di
+<a href="http://www.xmleges.org/ita/index.php?option=com_content&task=view&id=21&Itemid=44" target="_blank">xmLegesLinker</a>, il precedente parser di riferimenti normativi sviluppato e distribuito da Ittig dal 2003.</p>
 
 <p>
 Obiettivi primari del nuovo sviluppo sono: 
-<ul>
-<li>realizzazione di  una libreria in Java facilmente integrabile nei vari sistemi e applicazioni 
+<ul style="text-align:justify;">
+<li>la realizzazione di una libreria Java facilmente integrabile nei vari sistemi e applicazioni, 
 rilasciata con codice sorgente aperto;</li>
-<li>superamento dei principali limiti dell'attuale parser (difficoltà di manutenzione e aggiornamento, 
-mancato riconoscimento delle citazioni multiple, rigidità nell'ordine dei campi del riferimento, 
-gestione degli alias, gestione dei riferimenti incompleti);</li>
-<li>supporto agli identificatori standard ed europei;</li>
-<li>allargamento della copertura delle autorità emananti;</li>
-<li>estensione al riconoscimento delle citazioni a legislazione europea.</li>
+<li>l'utilizzo di identificatori standard nazionali ed europei;</li>
+<li>l'allargamento della copertura delle autorità emananti italiane, compresi i Ministeri;</li>
+<li>il supporto al riconoscimento di citazioni multiple, sia a interi testi legislativi che a partizioni;</li>
+<li>la capacità di riconoscere alias normativi nazionali ed europei;</li>
+<li>il supporto all'identificazione delle citazioni alla legislazione europea.</li>
+
 </ul>
 </p>
 
@@ -59,33 +60,32 @@ gestione degli alias, gestione dei riferimenti incompleti);</li>
 
 <h3>
 <a id="partecipa" class="anchor" href="#partecipa" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-Partecipa</h3>
+Partecipazione</h3>
 
-<p>Il progetto si propone il coinvolgimento della comunità degli utilizzatori, a partire dai soggetti 
+<p style="text-align:justify;">Il progetto si propone di coinvolgere la comunità degli utilizzatori, a partire dai soggetti 
 istituzionali (Parlamento, Governo, Ministeri, Regioni, Autorità, Poligrafico), per la segnalazione 
-dei casi non coperti, dei bug e la richiesta di implementazione di nuove features, oltre alla 
+dei casi non coperti, dei bug e per richiedere l'implementazione di nuove features, oltre a fornire la 
 possibilità di accedere e contribuire al codice sorgente dell'applicazione. 
 </p>
 
-<p>
-E' possibile testare Linkoln su un testo legislativo in formato txt o html  utilizzando la form [Try Demo].  
-
-<p>Per incrementare la copertura e la precisione del riconoscimento segnala [link alla form] una citazione non riconosciuta, riconosciuta solo parzialmente o di cui è errata la costruzione dell'identificatore standard.
-
-<p>Invia il testo della citazione o il frammento di testo legislativo che la contiene utilizzando la form [link] e possibilmente specificando il tipo di errore. </p>
+<p style="text-align:justify;">
+È possibile testare Linkoln liberamente ed inviare le opportune segnalazioni riguardanti casi 
+di citazioni non rilevate o identificatori errati attraverso 
+<a href="http://godel.ittig.cnr.it:8081/Linkoln/">questa pagina</a>.
+</p>
 
 
 <h3>
 <a id="link" class="anchor" href="link" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-Costruzione dei link</h3>
+Gli identificatori</h3>
 
-<p>
+<p style="text-align:justify;">
 I riferimenti estratti dai testi sono rappresentati tramite degli identificatori standard per la legislazione 
 che consentono la risoluzione e il reperimento in rete del documento citato o di sue specifiche partizioni.
 Gli standard attualmente supportati da Linkoln sono: 
 </p>
 
-<ul>
+<ul style="text-align:justify;">
 <li><strong>urn:nir</strong>, il formato in uso in Italia per l'identificazione delle risorse legislative, adottato e supportato anche dal portale della legislazione vigente Normattiva;
 </li>
 <li>
@@ -93,12 +93,12 @@ Gli standard attualmente supportati da Linkoln sono:
 </li>
 </ul>
 
-<p>
+<p style="text-align:justify;">
 È inoltre previsto l'allargamento del supporto a due ulteriori formati di identificazione, 
 non appena le specifiche saranno consolidate e adottate ufficialmente:
 </p>
 
-<ul>
+<ul style="text-align:justify;">
 <li>
 <strong>urn:lex</strong>, la specifica internazionale nata come evoluzione dello standard urn:nir per l'attribuzione di un nome uniforme alle risorse giuridiche;
 </li>
@@ -107,12 +107,13 @@ non appena le specifiche saranno consolidate e adottate ufficialmente:
 </li>
 </ul>
 
-
 <h3>
 <a id="linkoln" class="anchor" href="#linkoln" aria-hidden="true"><span class="octicon octicon-link"></span></a>
 Linkoln</h3>
 
-<p>To do.</p>
+
+<img src="linkoln-action.png" >
+
 
 
 
@@ -120,13 +121,15 @@ Linkoln</h3>
 <a id="copertura" class="anchor" href="#copertura" aria-hidden="true"><span class="octicon octicon-link"></span></a>
 Copertura e valutazione</h3>
 
-<p>Compito del software di riconoscimento delle citazioni legislative testuali è quello di garantire la massima copertura della estrema variabilità negli stili di citazione (ordine dei campi della citazione, uso di forme abbreviate, citazioni multiple, utilizzo di alias), delle diverse tipologie di documento citato e delle numerose possibili autorità emananti, inclusa la copertura dello storico e del pregresso. 
+<p style="text-align:justify;">
+Compito del software di riconoscimento delle citazioni legislative testuali è quello di garantire la massima copertura della estrema variabilità negli stili di citazione (ordine dei campi della citazione, uso di forme abbreviate, citazioni multiple, utilizzo di alias), delle diverse tipologie di documento citato e delle numerose possibili autorità emananti, inclusa la copertura dello storico e del pregresso. 
 
-<p>In fase di analisi è stata individuata un'ampia casistica di forme di citazione testuale, tipologie di documento normativo e autorità emananti. 
-
-<p>Nella prima colonna della tabella [COVERAGE] è elencato un campione delle diverse forme di citazione testuale di cui è richiesta la copertura. 
-
-<p>Lo stesso campione verrà utilizzato come dataset di valutazione della copertura delle forme di citazione correttamente riconosciute e serializzate dalla versione corrente di Linkoln. Per mostrare i miglioramenti raggiunti rispetto al parser xmLegesLinker viene riportata anche la relativa estrazione. 
+<p style="text-align:justify;">
+In fase di analisi è stata individuata un'ampia casistica di forme di citazione testuale, 
+tipologie di documento normativo e autorità emananti.
+È possibile apprezzare alcune di queste variazioni nella 
+<a href="http://ittig.github.io/Linkoln/copertura.html">tabella di copertura</a> prodotta nel corso 
+del progetto allo scopo di valutare i miglioramenti di Linkoln rispetto ai precedenti software. 
 </p>
 
 
@@ -135,13 +138,20 @@ Copertura e valutazione</h3>
 <a id="licenza" class="anchor" href="#licenza" aria-hidden="true"><span class="octicon octicon-link"></span></a>
 Licenza</h3>
 
-<p>Linkoln è rilasciato con licenza GPL ver.3</p>
+<p>Linkoln è rilasciato con licenza GNU GENERAL PUBLIC LICENSE Version 3.</p>
 
 
 <h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+Contacts & Credits</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<p style="text-align:justify;">
+Progetto coordinato da Tommaso Agnoloni (ITTIG) e 
+Carlo Marchetti (Senato della Repubblica). Linkoln è sviluppato da Lorenzo Bacci.  
+Per informazioni e segnalazioni: <a href="mailto:linkoln@ittig.cnr.it">linkoln@ittig.cnr.it</a>
+<br>(link alle issues su Github https://github.com/Ittig/Linkoln/issues)
+</p>
+
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Ittig/Linkoln">Linkoln</a> is maintained by <a href="http://www.ittig.cnr.it">Ittig</a>.</span>

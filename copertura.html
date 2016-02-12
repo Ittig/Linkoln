@@ -1,55 +1,1377 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Linkoln - Tabella di copertura</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-	<a href="http://ittig.github.io/Linkoln/" ><img src="http://godel.ittig.cnr.it/linkoln/Linkoln.logo.alpha.shadow.invert.png" width="300px"></a>
-	<h2 class="project-tagline"></h2>
+<head>
+<meta charset="UTF-8">
+<title>Linkoln - Tabella di copertura</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css"
+	media="screen">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css"
+	media="screen">
+<link rel="stylesheet" type="text/css"
+	href="stylesheets/github-light.css" media="screen">
+</head>
+<body>
+	<section class="page-header">
+		<a href="http://ittig.github.io/Linkoln/"><img
+			src="http://godel.ittig.cnr.it/linkoln/Linkoln.logo.alpha.shadow.invert.png"
+			width="300px"></a>
+		<h2 class="project-tagline"></h2>
+		<p>
+			<a href="https://github.com/Ittig/Linkoln" class="btn">View on
+				GitHub</a> <a
+				href="http://godel.ittig.cnr.it:8081/Linkoln/ittig-linkoln-0.8.jar"
+				class="btn">Download binary</a> <a
+				href="http://ittig.github.io/Linkoln/copertura.html" class="btn">Coverage</a>
+			<a href="http://godel.ittig.cnr.it:8081/Linkoln/" class="btn">Try
+				Linkoln on-line</a>
+	</section>
+
+	<section class="main-content">
+
+		<h3>
+			<a id="tabella" class="anchor" href="#tabella" aria-hidden="true"><span
+				class="octicon octicon-link"></span></a> Tabella di copertura
+		</h3>
+
+		<p style="text-align: justify;">
+			Nelle prime fasi del progetto <em>Linkoln</em> è stato prodotto un
+			elenco di citazioni testuali contenenti riferimenti alla legislazione
+			nazionale ed europea, al fine di verificare lo stato di avanzamento
+			della capacità di copertura del software e di valutare le sue
+			prestazioni rispetto a quelle di <em>xmLegesLinker</em>. Il confronto
+			viene effettuato sulla base degli identificatori prodotti nei formati
+			standard <em>urn:nir</em> per la legislazione nazionale e <em>CELEX</em>
+			per la legislazione europea.
+		<p>La tabella di copertura è composta dalle seguenti colonne:
+		<ul>
+			<li>un frammento di testo contenente la citazione legislativa;</li>
+			<li>gli identificatori corretti relativi ai riferimenti
+				contenuti nella citazione legislativa;</li>
+			<li>gli identificatori dei riferimenti estratti automaticamente
+				da xmLegesLinker;</li>
+			<li>gli identificatori dei riferimenti estratti automaticamente
+				da Linkoln.</li>
+		</ul>
+
+
+	</section>
+
 	<p>
-	<a href="https://github.com/Ittig/Linkoln" class="btn">View on GitHub</a> 
-	<a href="http://godel.ittig.cnr.it:8081/Linkoln/ittig-linkoln-0.8.jar" class="btn">Download binary</a>  
-	<a href="http://ittig.github.io/Linkoln/copertura.html" class="btn">Coverage</a>
-	<a href="http://godel.ittig.cnr.it:8081/Linkoln/" class="btn">Try Linkoln on-line</a>  
-    </section>
+	<table  valign='middle' align='center' border='2'>
+		<tr>
+			<td align='left'><strong>Citazione legislativa</strong></td>
+			<td align='left'><strong>Identificatore corretto</strong></td>
+			<td align='left'><strong>xmLegesLinker 1.13a (-r ni)</strong></td>
+			<td align='left'><strong>Linkoln 0.8</strong></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> legge n. 94 del 1997 </em></td>
+			<td valign='center'>urn:nir:stato:legge:1997;94<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1997;94</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1997;94<br>
+			<br></td>
+		</tr>
+		<tr  valign='middle' style='font-size: 10px'>
+			<td valign='middle'><em> L. n. 289/2002 </em></td>
+			<td valign='middle'>urn:nir:stato:legge:2002;289<br>
+			<br></td>
+			<td valign='middle' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2002;289</td>
+			<td valign='middle' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2002;289<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> l. n. 37 del 1990 </em></td>
+			<td valign='center'>urn:nir:stato:legge:1990;37<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1990;37</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1990;37<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> artt. 13 e 18 della legge n.
+					349/1986 </em></td>
+			<td valign='center'>urn:nir:stato:legge:1986;349~art13<br>urn:nir:stato:legge:1986;349~art18<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:legge:1986;349</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1986;349~art13<br>urn:nir:stato:legge:1986;349~art18<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 4-bis della legge n. 468 del
+					1978 </em></td>
+			<td valign='center'>urn:nir:stato:legge:1978;468~art4bis<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1978;468~art4bis</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1978;468~art4bis<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Leggi 25 aprile 1938, nn. 511, 518
+					e 548 </em></td>
+			<td valign='center'>urn:nir:stato:legge:1938-04-25;511<br>urn:nir:stato:legge:1938-04-25;518<br>urn:nir:stato:legge:1938-04-25;548
+			</td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1938-04-25;511<br>urn:nir:stato:legge:1938-04-25;518<br>urn:nir:stato:legge:1938-04-25;548
+			</td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> legge 5 luglio 1991, n. 197 </em></td>
+			<td valign='center'>urn:nir:stato:legge:1991-07-05;197<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1991-07-05;197</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1991-07-05;197<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> ex lege n. 40/1987 art. 1 </em></td>
+			<td valign='center'>urn:nir:stato:legge:1987;40~art1<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1987;40~art1<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 18, lettera f), della legge
+					n. 845/1978 </em></td>
+			<td valign='center'>urn:nir:stato:legge:1978;845~art18-letf<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:legge:1978;845~art18</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1978;845~art18-letf<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 4, comma 1, lettera c), n. 2
+					della legge n. 30 del 14 febbraio 2003 </em></td>
+			<td valign='center'>urn:nir:stato:legge:2003-02-14;30~art4-com1-letc-num2<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2003-02-14;30~art4-com1-letc-num2</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2003-02-14;30~art4-com1-letc-num2<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Artt. 2, 7 e 31 L. 30-3-1971, n.
+					118 </em></td>
+			<td valign='center'>urn:nir:stato:legge:1971-03-30;118~art2<br>urn:nir:stato:legge:1971-03-30;118~art7<br>urn:nir:stato:legge:1971-03-30;118~art31
+			</td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:legge:1971-03-30;118</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1971-03-30;118~art2<br>urn:nir:stato:legge:1971-03-30;118~art7<br>urn:nir:stato:legge:1971-03-30;118~art31
+			</td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto legge n. 217 del 2001 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legge:2001;217<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:2001;217</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:2001;217<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> D.L. 13 marzo 1988, n. 69 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legge:1988-03-13;69<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1988-03-13;69</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1988-03-13;69<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 1 del decreto-legge 25 maggio
+					1994, n. 313 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legge:1994-05-25;313~art1<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1994-05-25;313~art1</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1994-05-25;313~art1<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decretolegge 27 gennaio 1992, n.
+					120 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legge:1992-01-27;120<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1992-01-27;120</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1992-01-27;120<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 5, comma 10, del
+					decreto-legge n. 143/1991 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legge:1991;143~art5-com10<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1991;143~art5-com10</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1991;143~art5-com10<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 1, comma 4-quinquies, del
+					d.l. n. 413 del 1989 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legge:1989;413~art1-com4quinquies<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1989;413~art1-com4quinquies</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1989;413~art1-com4quinquies<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto legislativo 7 agosto 1997,
+					n. 279 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legislativo:1997-08-07;279<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-08-07;279</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-08-07;279<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> tabella C allegata al decreto
+					legislativo n. 279 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legislativo:;279:tabella.c<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:decreto.legislativo:;279</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:;279:tabella.c<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> D.Lgs. n. 279 del 1997 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legislativo:1997;279<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997;279</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997;279<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Titolo III del D.Lgs. 7 agosto
+					1997, n. 279 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legislativo:1997-08-07;279~tit3<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-08-07;279~tit3</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-08-07;279~tit3<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 51, comma 10, lett. a), del
+					D.Lgs. n. 22/1997 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legislativo:1997;22~art51-com10-leta<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997;22~art51-com10-leta</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997;22~art51-com10-leta<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 4 del decreto legislativo 26
+					maggio 1997, n. 153 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legislativo:1997-05-26;153~art4<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-05-26;153~art4</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-05-26;153~art4<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 107 del decreto legislativo
+					n. 385/1993 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legislativo:1993;385~art107<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1993;385~art107</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1993;385~art107<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> DLgs 12- 4-48, n. 1010 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legislativo:1948-04-12;1010<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1948-04-12;1010</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1948-04-12;1010<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto del Presidente della
+					Repubblica 13 febbraio 2001, n. 123 </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:decreto:2001-02-13;123<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:2001-02-13;123</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:2001-02-13;123<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> D.P.R. 28 dicembre 1985, n. 1092 </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:decreto:1985-12-28;1092<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1985-12-28;1092</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1985-12-28;1092<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 62 del decreto del Presidente
+					della Repubblica n. 554/1999 </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:decreto:1999;554~art62<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1999;554~art62</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1999;554~art62<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> articoli 3 e 5 del decreto del
+					Presidente della Repubblica n. 633/1972 </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:decreto:1972;633~art3<br>urn:nir:presidente.repubblica:decreto:1972;633~art5<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:presidente.repubblica:decreto:1972;633</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1972;633~art3<br>urn:nir:presidente.repubblica:decreto:1972;633~art5<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 19 del d.p.r. n. 382 del 1980
+			</em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:decreto:1980;382~art19<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:presidente.repubblica:decreto:1980;382</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1980;382~art19<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 44, comma 2 del DPR 24-7-77
+					n. 616 </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:decreto:1977-07-24;616~art44-com2<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1977-07-24;616~art44-com2</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1977-07-24;616~art44-com2<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> DPR 616/77 </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:decreto:1977;616<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1977;616</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1977;616<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> legge costituzionale 26 febbraio
+					1948, n. 2 </em></td>
+			<td valign='center'>urn:nir:stato:legge.costituzionale:1948-02-26;2<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:1948-02-26;2</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:1948-02-26;2<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 3, legge Cost. 18 ottobre
+					2001, n. 3 </em></td>
+			<td valign='center'>urn:nir:stato:legge.costituzionale:2001-10-18;3~art3<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:2001-10-18;3~art3</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:2001-10-18;3~art3<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> L. costituzionale 26 febbraio
+					1948, n. 4 </em></td>
+			<td valign='center'>urn:nir:stato:legge.costituzionale:1948-02-26;4<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:1948-02-26;4</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:1948-02-26;4<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> L. cost. 26 febbraio 1948, n. 5,
+					art. 85 </em></td>
+			<td valign='center'>urn:nir:stato:legge.costituzionale:1948-02-26;5~art85<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:legge.costituzionale:1948-02-26;5</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:1948-02-26;5~art85<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> regio decreto 23 maggio 1924, n.
+					827 </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto:1924-05-23;827<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1924-05-23;827</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1924-05-23;827<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> R.D. 3 giugno 1926, n.941 </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto:1926-06-03;941<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1926-06-03;941</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1926-06-03;941<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> RD 28-1-1935, n. 145 </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto:1935-01-28;145<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1935-01-28;145</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1935-01-28;145<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> regio decreto-legge 15 marzo 1927,
+					n. 436 </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto.legge:1927-03-15;436<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1927-03-15;436</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1927-03-15;436<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Regio decreto-legge 30 ottobre
+					1943, n. 2/B </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-B<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:regio.decreto.legge:1943-10-30;2</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-b<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Regio D.L. 30 ottobre 1943, n. 2/B
+			</em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-B<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:regio.decreto.legge:1943-10-30;2</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-b<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> R.D. legge 30 ottobre 1943 n. 2/B
+			</em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-B<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:regio.decreto.legge:1943-10-30;2</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-b<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> R. decreto-legge 14 dicembre
+					1936-XV, n. 2374 </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto.legge:1936-12-14;2374<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:regio.decreto.legge:1936-12-14</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1936-12-14;2374<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 3 del R.D.L. 19 gennaio 1939,
+					n. 295 </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto.legge:1939-01-19;295~art3<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1939-01-19;295~art3</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1939-01-19;295~art3<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> RDL 2 aprile 1885, n. 3095 </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto.legge:1885-04-02;3095<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1885-04-02;3095</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1885-04-02;3095<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 5 del r.d.lgs. n. 511 del
+					1946 </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto.legislativo:1946;511~art5<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legislativo:1946;511~art5</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legislativo:1946;511~art5<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Decreto del capo del governo 15
+					ottobre 1938, n. 1783 </em></td>
+			<td valign='center'>urn:nir:capo.governo:decreto:1938-10-15;1783<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.governo:decreto:1938-10-15;1783<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Decreto luogotenenziale 12 aprile
+					1946, n. 627 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.luogotenenziale:1946-04-12;627<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.luogotenenziale:1946-04-12;627<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Decreto legislativo
+					luogotenenziale 13 marzo 1945, n. 116 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legislativo.luogotenenziale:1945-03-13;116<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo.luogotenenziale:1945-03-13;116<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> D.Lgs. Luogotenenziale 13 marzo
+					1945, n. 116 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legislativo.luogotenenziale:1945-03-13;116<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo.luogotenenziale:1945-03-13;116<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Decreto-legge luogotenenziale 25
+					giugno 1944, n. 151 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legge.luogotenenziale:1944-06-25;151<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge.luogotenenziale:1944-06-25;151<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> D.L. luogotenenziale 10 agosto
+					1944, n. 181 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legge.luogotenenziale:1944-08-10;181<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge.luogotenenziale:1944-08-10;181<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> D. L. L. 7 gennaio 1946, n. 1 </em></td>
+			<td valign='center'>urn:nir:stato:decreto.legge.luogotenenziale:1946-01-07;1<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:legge:1946-01-07;1</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge.luogotenenziale:1946-01-07;1<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto presidenziale 18 gennaio
+					1954, n. 18 </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:decreto:1954-01-18;18<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1954-01-18;18<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto legislativo presidenziale
+					27 giugno 1946, n. 38 </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:decreto.legislativo:1946-06-27;38<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto.legislativo:1946-06-27;38<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> D. Lgs. Presidenziale 25 giugno
+					1946, n. 12 </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:decreto.legislativo:1946-06-25;12<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto.legislativo:1946-06-25;12<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto del Capo provvisorio dello
+					Stato n. 629 del 21 aprile 1947 </em></td>
+			<td valign='center'>urn:nir:capo.provvisorio.stato:decreto:1947-04-21;629<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto:1947-04-21;629<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto del Capo provvisorio dello
+					Stato 18 aprile 1947, n. 266 </em></td>
+			<td valign='center'>urn:nir:capo.provvisorio.stato:decreto:1947-04-18;266<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto:1947-04-18;266<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto legislativo del Capo
+					provvisorio dello Stato 17 luglio 1947, n. 691 </em></td>
+			<td valign='center'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-07-17;691<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-07-17;691<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> D.Lgs. del Capo Provvisorio dello
+					Stato 22 agosto 1947, n. 1097 </em></td>
+			<td valign='center'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-08-22;1097<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-08-22;1097<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> articolo 8 del DLgs CPS 15-9-1947,
+					n. 896 </em></td>
+			<td valign='center'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-09-15;896~art8<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-09-15;896~art8<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 13 del DLCPS 15-9-1947, n.
+					896 </em></td>
+			<td valign='center'>urn:nir:capo.provvisorio.stato:decreto.legge:1947-09-15;896~art13<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto.legge:1947-09-15;896~art13<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Determinazione intercommissariale
+					22 settembre 1943, n. 753 </em></td>
+			<td valign='center'>urn:nir::determinazione.intercommissariale:1943-09-22;753<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::determinazione.intercommissariale:1943-09-22;753<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 250 del Regolamento 5-6-1940,
+					n. 635 </em></td>
+			<td valign='center'>urn:nir::regolamento:1940-06-05;635~art250<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::regolamento:1940-06-05;635~art250</td>
+			<td valign='center' bgcolor='Coral'>CELEX:31940R0635<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> ordinanza ministeriale 3 aprile
+					1987, n. 135 </em></td>
+			<td valign='center'>urn:nir:ministero.:ordinanza:1987-04-03;135<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:ordinanza:1987-04-03;135<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> ordinanze ministeriali 24 gennaio
+					1987, 3 aprile 1987, n. 134 </em></td>
+			<td valign='center'>urn:nir:ministero.:ordinanza:1987-01-24;<br>urn:nir:ministero.:ordinanza:1987-04-03;134<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:ordinanza:1987-01-24;<br>urn:nir:ministero.:ordinanza:1987-04-03;134<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> regolamento ministeriale 21 giugno
+					2000, n. 217 </em></td>
+			<td valign='center'>urn:nir:ministero.:regolamento:2000-06-21;217<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:regolamento:2000-06-21;217<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Decreto 26 giugno 2000, n. 219 </em></td>
+			<td valign='center'>urn:nir::decreto:2000-06-26;219<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::decreto:2000-06-26;219</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::decreto:2000-06-26;219<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> D. 27-9-1962, n. 1481 </em></td>
+			<td valign='center'>urn:nir::decreto:1962-09-27;1481<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::decreto:1962-09-27;1481<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Decreto ministeriale 16 gennaio
+					1997, n. 253 </em></td>
+			<td valign='center'>urn:nir:ministero.:decreto:1997-01-16;253<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:1997-01-16;253</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:1997-01-16;253<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto del Ministro dei lavori
+					pubblici 2 aprile 1968, n. 1444 </em></td>
+			<td valign='center'>urn:nir:ministero.lavori.pubblici:decreto:1968-04-02;1444<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.lavori.pubblici:decreto:1968-04-02;1444<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto del Ministero delle
+					finanze del 25 novembre 1998, n. 418 </em></td>
+			<td valign='center'>urn:nir:ministero.finanze:decreto:1998-11-25;418<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.finanze:decreto:1998-11-25;418<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare applicativa del MLPS n.
+					174 del 23 dicembre 1996 </em></td>
+			<td valign='center'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1996-12-23;174<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1996-12-23;174<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto ministeriale 24 agosto
+					1940, n. 2984, art. 638 </em></td>
+			<td valign='center'>urn:nir:ministero.:decreto:1940-08-24;2984~art638<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:ministero.:decreto:1940-08-24;2984</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:1940-08-24;2984~art638<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto ministeriale 18 settembre
+					1997 </em></td>
+			<td valign='center'>urn:nir:ministero.:decreto:1997-09-18;<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:ministero.:decreto:1997-09-18</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:1997-09-18;<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> allegato D del decreto
+					ministeriale 22 dicembre 2000 </em></td>
+			<td valign='center'>urn:nir:ministero.:decreto:2000-12-22;:allegato.d<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:ministero.:decreto:2000-12-22</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:2000-12-22;:allegato.d<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 15 del D.M. 27 marzo 2001 </em></td>
+			<td valign='center'>urn:nir:ministero.:decreto:2001-03-27;~art15<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:ministero.:decreto:2001-03-27~art15</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:2001-03-27;~art15<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> DM del 22 maggio 1998 </em></td>
+			<td valign='center'>urn:nir:ministero.:decreto:1998-05-22;<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:ministero.:decreto:1998-05-22</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:1998-05-22;<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> comma 4 art.6 DM 04/04/2000 </em></td>
+			<td valign='center'>urn:nir:ministero.:decreto:2000-04-04;~art6-com4<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:ministero.:decreto:2000-04-04~art6-com4</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:2000-04-04;~art6-com4<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto MICA 23 dicembre 1997 </em></td>
+			<td valign='center'>urn:nir:ministero.industria.commercio.artigianato:decreto:1997-12-23;<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.industria.commercio.artigianato:decreto:1997-12-23;<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Decreto MiPAF del 17 aprile 2003 </em></td>
+			<td valign='center'>urn:nir:ministero.politiche.agricole.forestali:decreto:2003-04-17;<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.politiche.agricole.forestali:decreto:2003-04-17;<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Decreto Mi.P.A.F. del 10/08/2001 </em></td>
+			<td valign='center'>urn:nir:ministero.politiche.agricole.forestali:decreto:2001-08-10;<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.politiche.agricole.forestali:decreto:2001-08-10;<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 2 del decreto ministeriale
+					del tesoro 22 aprile 1997 </em></td>
+			<td valign='center'>urn:nir:ministero.tesoro:decreto:1997-04-22;~art2<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.tesoro:decreto:1997-04-22;~art2<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 2, comma 4, lettera d), del
+					decreto ministeriale D/118/2005 </em></td>
+			<td valign='center'>urn:nir:ministero.:decreto:2005;D-118-2005~art2-com4-letd<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:2005;D-118-2005~art2-com4-letd<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> deliberazione del CIPE del 27
+					aprile 1995 </em></td>
+			<td valign='center'>urn:nir:comitato.interministeriale.programmazione.economica:deliberazione:1995-04-27;<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:comitato.interministeriale.programmazione.economica:deliberazione:1995-04-27;<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> delibera CIPE 8 aprile 1987, n.
+					157 </em></td>
+			<td valign='center'>urn:nir:comitato.interministeriale.programmazione.economica:deliberazione:1987-04-08;157<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:comitato.interministeriale.programmazione.economica:deliberazione:1987-04-08;157<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Deliberazione 8 aprile 1987 n. 157
+			</em></td>
+			<td valign='center'>urn:nir::deliberazione:1987-04-08;157<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::deliberazione:1987-04-08;157</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::deliberazione:1987-04-08;157<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto del Presidente del
+					Consiglio dei Ministri 10 giugno 2004 </em></td>
+			<td valign='center'>urn:nir:presidente.consiglio.ministri:decreto:2004-06-10;<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:presidente.consiglio.ministri:decreto:2004-06-10</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:decreto:2004-06-10;<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> DPCM 25 febbraio 2011 </em></td>
+			<td valign='center'>urn:nir:presidente.consiglio.ministri:decreto:2011-02-25;<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:presidente.consiglio.ministri:decreto:2011-02-25</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:decreto:2011-02-25;<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> DPCM del 3 giugno 1986 </em></td>
+			<td valign='center'>urn:nir:presidente.consiglio.ministri:decreto:1986-06-03;<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:presidente.consiglio.ministri:decreto:1986-06-03</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:decreto:1986-06-03;<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> O.P.C.M. n. 3267 del 7 marzo 2003
+			</em></td>
+			<td valign='center'>urn:nir:presidente.consiglio.ministri:ordinanza:2003-03-07;3267<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:ordinanza:2003-03-07;3267</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:ordinanza:2003-03-07;3267<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> O.P.C.M. n. 3267/2003 </em></td>
+			<td valign='center'>urn:nir:presidente.consiglio.ministri:ordinanza:2003;3267<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:ordinanza:2003;3267</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:ordinanza:2003;3267<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare n. 40/8/403 del 22
+					dicembre 1980 </em></td>
+			<td valign='center'>urn:nir::circolare:1980-12-22;40-8-403<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1980-12-22;40-8-403<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare n. 24 del 19 maggio 1979
+			</em></td>
+			<td valign='center'>urn:nir::circolare:1979-05-19;24<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1979-05-19;24<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare n. 73/E del 27 maggio
+					1994 </em></td>
+			<td valign='center'>urn:nir::circolare:1994-05-27;73-E<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1994-05-27;73-e<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare del 19 dicembre 1997, n.
+					320/E </em></td>
+			<td valign='center'>urn:nir::circolare:1997-12-19;320-E<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1997-12-19;320-e<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare del Ministero delle
+					Finanze n. 123/E del 12 maggio 1998 </em></td>
+			<td valign='center'>urn:nir:ministero.finanze:circolare:1998-05-12;123-E<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.finanze:circolare:1998-05-12;123-e<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolari n. 30/E del 27 gennaio
+					1998 e n. 186/E del 15 luglio 1998 </em></td>
+			<td valign='center'>urn:nir::circolare:1998-01-27;30-E<br>urn:nir::circolare:1998-07-15;186-E<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1998-01-27;30-e<br>urn:nir::circolare:1998-07-15;186-e<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare n. 326/E del 1997 </em></td>
+			<td valign='center'>urn:nir::circolare:1997;326-E<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1997;326-e<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare 9 settembre 1997, n.
+					D/686 </em></td>
+			<td valign='center'>urn:nir::circolare:1997-09-09;D-686<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1997-09-09;d-686<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare ministeriale n. D/686
+					del 9 settembre 1997 </em></td>
+			<td valign='center'>urn:nir:ministero.:circolare:1997-09-09;D-686<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:circolare:1997-09-09;d-686<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare n. 234363 del 20
+					novembre 1997 </em></td>
+			<td valign='center'>urn:nir::circolare:1997-11-20;234363<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1997-11-20;234363<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolari Ministero del lavoro e
+					P.S n. 98 del 12 agosto 1995 e n. 130 del 25 ottobre 1995 </em></td>
+			<td valign='center'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1995-08-12;98<br>urn:nir:ministero.lavoro.politiche.sociali:circolare:1995-10-25;130<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1995-08-12;98<br>urn:nir:ministero.lavoro.politiche.sociali:circolare:1995-10-25;130<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare n. 101 del 17 luglio
+					1997 del Ministero del lavoro e P.S. </em></td>
+			<td valign='center'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1997-07-17;101<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1997-07-17;101<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Allegato 1 alla circolare Agea n.
+					13 del 4 maggio 2005 </em></td>
+			<td valign='center'>urn:nir:agenzia.erogazioni.agricoltura:circolare:2005-05-04;13:allegato.1<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:agenzia.erogazioni.agricoltura:circolare:2005-05-04;13:allegato.1<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> lettera circolare n. 59169 dell'11
+					settembre 1998 del Ministero del lavoro e P.S. </em></td>
+			<td valign='center'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1998-09-11;59169<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1998-09-11;59169<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto interministeriale 24
+					aprile 2002 </em></td>
+			<td valign='center'>urn:nir:ministero.+ministero.:decreto:2002-04-24;<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.+ministero.:decreto:2002-04-24;<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto interministeriale 10
+					ottobre 1992 del Ministro delle finanze e del Ministro di grazia e
+					giustizia </em></td>
+			<td valign='center'>urn:nir:ministero.finanze+ministero.grazia.giustizia:decreto:1992-10-10;<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.finanze+ministero.grazia.giustizia:decreto:1992-10-10;<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto interministeriale n. 983
+					del 23 giugno 1988 </em></td>
+			<td valign='center'>urn:nir:ministero.+ministero.:decreto:1988-06-23;983<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.+ministero.:decreto:1988-06-23;983<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto interministeriale n. 95-T
+					del 9 agosto 1999 </em></td>
+			<td valign='center'>urn:nir:ministero.+ministero.:decreto:1999-08-09;95-T<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.+ministero.:decreto:1999-08-09;95-t<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 8, commi 6 e 7 del decreto
+					interministeriale n. 272/2002 </em></td>
+			<td valign='center'>urn:nir:ministero.+ministero.:decreto:2002;272~art8-com6<br>urn:nir:ministero.+ministero.:decreto:2002;272~art8-com7<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.+ministero.:decreto:2002;272~art8-com6<br>urn:nir:ministero.+ministero.:decreto:2002;272~art8-com7<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> ordinanza n. 3 del 3 aprile 2003 </em></td>
+			<td valign='center'>urn:nir::ordinanza:2003-04-03;3<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::ordinanza:2003-04-03;3</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::ordinanza:2003-04-03;3<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> provvedimento n. 1 del 31 marzo
+					2004 </em></td>
+			<td valign='center'>urn:nir::provvedimento:2004-03-31;1<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::provvedimento:2004-03-31;1</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::provvedimento:2004-03-31;1<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> provvedimento n. 1/2003 del 21
+					marzo 2003 </em></td>
+			<td valign='center'>urn:nir::provvedimento:2003-03-21;1<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir::provvedimento:2003-03-21;1-2003</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::provvedimento:2003-03-21;1<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> atto di Determinazione n. 36 del
+					21 luglio 2000 </em></td>
+			<td valign='center'>urn:nir::determinazione:2000-07-21;36<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir::determinazione:2000-07-21;36<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> risoluzione 135/E/03 del 17 giugno
+					2003 dell'Agenzia delle entrate </em></td>
+			<td valign='center'>urn:nir:agenzia.entrate:risoluzione:2003-06-17;135-E-03<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:agenzia.entrate:risoluzione:2003-06-17;135-E-03<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> risoluzione n. 41/E/02
+					dell'Agenzia delle entrate </em></td>
+			<td valign='center'>urn:nir:agenzia.entrate:risoluzione:2002;41-E-02<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:agenzia.entrate:risoluzione:2002;41-E-02<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> circolare Agea n. 17 del 13 maggio
+					2005 </em></td>
+			<td valign='center'>urn:nir:agenzia.erogazioni.agricoltura:circolare:2005-05-13;17<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:agenzia.erogazioni.agricoltura:circolare:2005-05-13;17<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 9 del decreto dirigenziale n.
+					137 del 7 aprile 2005 </em></td>
+			<td valign='center'>urn:nir:direzione.:decreto:2005-04-07;137~art9<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:direzione.:decreto:2005-04-07;137~art9<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 9 del decreto dirigenziale
+					D/137 del 7 aprile 2005 </em></td>
+			<td valign='center'>urn:nir:direzione.:decreto:2005-04-07;D-137~art9<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:direzione.:decreto:2005-04-07;D-137~art9<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> legge regionale 6 luglio 1998, n.
+					24 </em></td>
+			<td valign='center'>urn:nir:regione.:legge:1998-07-06;24<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1998-07-06;24</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1998-07-06;24<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 5 della legge regionale n. 16
+					del 4-5-1974 </em></td>
+			<td valign='center'>urn:nir:regione.:legge:1974-05-04;16~art5<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1974-05-04;16~art5</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1974-05-04;16~art5<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> articoli 14 e 110 della L.R.
+					6-5-1977, n. 28 </em></td>
+			<td valign='center'>urn:nir:regione.:legge:1977-05-06;28~art14<br>urn:nir:regione.:legge:1977-05-06;28~art110<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:regione.:legge:1977-05-06;28</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1977-05-06;28~art14<br>urn:nir:regione.:legge:1977-05-06;28~art110<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 21 della LR 12 marzo 1977,
+					n.18 </em></td>
+			<td valign='center'>urn:nir:regione.:legge:1977-03-12;18~art21<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1977-03-12;18~art21</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1977-03-12;18~art21<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> LLRR 22-8-77, n. 58 e 17-2-79, n.
+					9 </em></td>
+			<td valign='center'>urn:nir:regione.:legge:1977-08-22;58<br>urn:nir:regione.:legge:1979-02-17;9<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1977-08-22;58<br>urn:nir:regione.:legge:1979-02-17;9<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> regolamento regionale n. 1 del 2
+					gennaio 1974 </em></td>
+			<td valign='center'>urn:nir:regione.:regolamento:1974-01-02;1<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:regolamento:1974-01-02;1</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:regolamento:1974-01-02;1<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> artt. 3 e 4 dello statuto
+					regionale </em></td>
+			<td valign='center'>urn:nir:regione.:statuto:;~art3<br>urn:nir:regione.:statuto:;~art4<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:statuto:;~art3<br>urn:nir:regione.:statuto:;~art4<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> delibera del consiglio regionale
+					n. 962 del 1° settembre 1989 </em></td>
+			<td valign='center'>urn:nir:consiglio.regione.:deliberazione:1989-09-01;962<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:consiglio.regione.:deliberazione:1989-09-01;962<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> delibera della giunta comunale n.
+					107 dell'11 agosto 1998 </em></td>
+			<td valign='center'>urn:nir:giunta.comune.:deliberazione:1998-08-11;107<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:giunta.comune.:deliberazione:1998-08-11;107<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> decreto del presidente della
+					Giunta regionale della Lombardia n. 8980 del 20 maggio 2004 </em></td>
+			<td valign='center'>urn:nir:presidente.giunta.regione.lombardia:decreto:2004-05-20;8980<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='DarkGrey'><br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> leggi provinciali 11 settembre
+					1998, n. 10 e 11 agosto 1998, n. 9 </em></td>
+			<td valign='center'>urn:nir:provincia.:legge:1998-09-11;10<br>urn:nir:provincia.:legge:1998-08-11;9<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:provincia.:legge:1998-09-11;10<br>urn:nir:provincia.:legge:1998-08-11;9<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> articolo 87, quinto comma, della
+					Costituzione </em></td>
+			<td valign='center'>urn:nir:stato:costituzione:;~art87-com5<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:costituzione:1947-12-27~art87-com5</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:costituzione:;~art87-com5<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 2043 cod. civ. </em></td>
+			<td valign='center'>urn:nir:stato:codice.civile:1942-03-16;262~art2043<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.civile:1942-03-16;262~art2043</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.civile:1942-03-16;262~art2043<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 110 cod. pen. </em></td>
+			<td valign='center'>urn:nir:stato:codice.penale:1930-10-19;1398~art110<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.penale:1930-10-19;1398~art110</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.penale:1930-10-19;1398~art110<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> articolo 143 del codice di
+					procedura civile </em></td>
+			<td valign='center'>urn:nir:stato:codice.procedura.civile:1940-10-28;1443~art143<br>
+			<br></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.procedura.civile:1940-10-28;1443~art143</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.procedura.civile:1940-10-28;1443~art143<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> Articolo 696 del codice di
+					procedura penale </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art696<br>
+			<br></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:codice.procedura.penale:1988-09-22;447~art696</td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art696<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 192 commi 3 e 4 C.P.P. </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art192-com3<br>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art192-com4<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art192-com3<br>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art192-com4<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 67, comma 1, n. 2, L. Fall. </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto:1942-03-16;267~art67-com1-num2<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='Coral'>urn:nir:stato:regio.decreto:1942-03-16;267~art67-com1<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 34 della legge finanziaria
+					2003 </em></td>
+			<td valign='center'>urn:nir:stato:legge:2002-12-27;289~art34<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2002-12-27;289~art34<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> ultimo periodo del comma 17
+					dell'art. 29 della legge finanziaria 2003 </em></td>
+			<td valign='center'>urn:nir:stato:legge:2002-12-27;289~art29-com17<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2002-12-27;289~art29-com17<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> comma 7 dell'art. 110 T.U.L.P.S. </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto:1931-06-18;773~art110-com7<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1931-06-18;773~art110-com7<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 41, comma 2, del TUIR </em></td>
+			<td valign='center'>urn:nir:presidente.repubblica:decreto:1986-12-22;917~art41-com2<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1986-12-22;917~art41-com2<br>
+			<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> artt. 127, 128 e 189 del TU delle
+					LLSS </em></td>
+			<td valign='center'>urn:nir:stato:regio.decreto:1934-07-27;1265~art127<br>urn:nir:stato:regio.decreto:1934-07-27;1265~art128<br>urn:nir:stato:regio.decreto:1934-07-27;1265~art189
+			</td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1934-07-27;1265~art127<br>urn:nir:stato:regio.decreto:1934-07-27;1265~art128<br>urn:nir:stato:regio.decreto:1934-07-27;1265~art189
+			</td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> artt. 7 e 10 del Testo Unico
+					5-6-1939, n. 1016 </em></td>
+			<td valign='center'>urn:nir:stato:testo.unico:1939-06-05;1016~art7<br>urn:nir:stato:testo.unico:1939-06-05;1016~art10<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:testo.unico:1939-06-05;1016~art7<br>urn:nir:stato:testo.unico:1939-06-05;1016~art10<br></td>
+		</tr>
+		<tr style='font-size: 10px'>
+			<td valign='center'><em> art. 76 del TU 5-6-1939, n.1016 </em></td>
+			<td valign='center'>urn:nir:stato:testo.unico:1939-06-05;1016~art76<br>
+			<br></td>
+			<td valign='center' bgcolor='DarkGrey'></td>
+			<td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:testo.unico:1939-06-05;1016~art76<br>
+			<br></td>
+		</tr>
+	</table>
+	<section class="main-content">
+		<h3>
+			<a id="report" class="anchor" href="#report" aria-hidden="true"><span
+				class="octicon octicon-link"></span></a>Report
+		</h3>
+		<ul>
+			<li>Totale citazioni testuali: <strong>146</strong></li>
+		</ul>
+		<ul>
+			<li>Totale riferimenti: <strong>164</strong></li>
+		</ul>
+		<table align='center'>
+			<tr bgcolor='LightGrey'>
+				<td>&nbsp;</td>
+				<td align='left'><strong>xmLegesLinker 1.13a (-r ni)</strong></td>
+				<td align='left'><strong>Linkoln 0.8</strong></td>
+			</tr>
+			<tr>
+				<td>Riferimenti trovati</td>
+				<td>74/164 (45.1%)</td>
+				<td>163/164 (99.4%)</td>
+			</tr>
+			<tr bgcolor='LightGrey'>
+				<td>Riferimenti non trovati</td>
+				<td>90/164 (54.9%)</td>
+				<td>1/164 (0.6%)</td>
+			</tr>
+			<tr>
+				<td>Riferimenti trovati<br>con identificatore corretto
+				</td>
+				<td>49/164 (29.9%)</td>
+				<td>161/164 (98.2%)</td>
+			</tr>
+			<tr bgcolor='LightGrey'>
+				<td>Riferimenti trovati<br>con identificatore errato
+				</td>
+				<td>25/164 (15.2%)</td>
+				<td>2/164 (1.2%)</td>
+			</tr>
+			<tr>
+				<td>Citazioni completamente corrette<br>(riferimenti
+					trovati e identificatori corretti)
+				</td>
+				<td>49/146 (33.6%)</td>
+				<td>143/146 (97.9%)</td>
+			</tr>
+		</table>
 
-    <section class="main-content">
-
-<h3>
-<a id="tabella" class="anchor" href="#tabella" aria-hidden="true"><span class="octicon octicon-link"></span></a>
-Tabella di copertura</h3>
-    
-<p style="text-align:justify;">
-Nelle prime fasi del progetto <em>Linkoln</em> è stato prodotto un elenco di citazioni testuali 
-contenenti riferimenti alla legislazione nazionale ed europea, al fine di verificare lo 
-stato di avanzamento della capacità di copertura del software e di valutare le sue 
-prestazioni con quelle di <em>xmLegesLinker</em>. Il confronto viene effettuato sulla base degli
-identificatori prodotti negli standard <em>urn:nir</em> per la legislazione nazionale e 
-<em>CELEX</em> per la legislazione europea.
-
-<p>
-La tabella di copertura è composta dalle seguenti colonne:
-<ul>
-<li>un frammento di testo contenente la citazione legislativa;</li>
-<li>gli identificatori corretti relativi ai riferimenti contenuti nella citazione legislativa;</li>
-<li>gli identificatori dei riferimenti estratti automaticamente da xmLegesLinker;</li>
-<li>gli identificatori dei riferimenti estratti automaticamente da Linkoln.</li>
-</ul>
-
-
-</section>
-
-<p>
-<table align='center' border='2'><tr><td align='left'><strong>Citazione legislativa</strong></td><td align='left'><strong>Identificatore corretto</strong></td><td align='left'><strong>xmLegesLinker 1.13a (-r ni)</strong></td><td align='left'><strong>Linkoln 0.8</strong></td></tr><tr style='font-size:10px'><td valign='center'><em> legge n. 94 del 1997 </em></td><td valign='center'>urn:nir:stato:legge:1997;94<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1997;94</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1997;94<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> L. n. 289/2002 </em></td><td valign='center'>urn:nir:stato:legge:2002;289<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2002;289</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2002;289<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> l. n. 37 del 1990 </em></td><td valign='center'>urn:nir:stato:legge:1990;37<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1990;37</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1990;37<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> artt. 13 e 18 della legge n. 349/1986 </em></td><td valign='center'>urn:nir:stato:legge:1986;349~art13<br>urn:nir:stato:legge:1986;349~art18<br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:legge:1986;349</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1986;349~art13<br>urn:nir:stato:legge:1986;349~art18<br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 4-bis della legge n. 468 del 1978 </em></td><td valign='center'>urn:nir:stato:legge:1978;468~art4bis<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1978;468~art4bis</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1978;468~art4bis<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Leggi 25 aprile 1938, nn. 511, 518 e 548 </em></td><td valign='center'>urn:nir:stato:legge:1938-04-25;511<br>urn:nir:stato:legge:1938-04-25;518<br>urn:nir:stato:legge:1938-04-25;548</td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1938-04-25;511<br>urn:nir:stato:legge:1938-04-25;518<br>urn:nir:stato:legge:1938-04-25;548</td></tr><tr style='font-size:10px'><td valign='center'><em> legge 5 luglio 1991, n. 197 </em></td><td valign='center'>urn:nir:stato:legge:1991-07-05;197<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1991-07-05;197</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1991-07-05;197<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> ex lege n. 40/1987 art. 1 </em></td><td valign='center'>urn:nir:stato:legge:1987;40~art1<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1987;40~art1<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 18, lettera f), della legge n. 845/1978 </em></td><td valign='center'>urn:nir:stato:legge:1978;845~art18-letf<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:legge:1978;845~art18</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1978;845~art18-letf<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 4, comma 1, lettera c), n. 2 della legge n. 30 del 14 febbraio 2003 </em></td><td valign='center'>urn:nir:stato:legge:2003-02-14;30~art4-com1-letc-num2<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2003-02-14;30~art4-com1-letc-num2</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2003-02-14;30~art4-com1-letc-num2<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Artt. 2, 7 e 31 L. 30-3-1971, n. 118 </em></td><td valign='center'>urn:nir:stato:legge:1971-03-30;118~art2<br>urn:nir:stato:legge:1971-03-30;118~art7<br>urn:nir:stato:legge:1971-03-30;118~art31</td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:legge:1971-03-30;118</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:1971-03-30;118~art2<br>urn:nir:stato:legge:1971-03-30;118~art7<br>urn:nir:stato:legge:1971-03-30;118~art31</td></tr><tr style='font-size:10px'><td valign='center'><em> decreto legge n. 217 del 2001 </em></td><td valign='center'>urn:nir:stato:decreto.legge:2001;217<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:2001;217</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:2001;217<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> D.L. 13 marzo 1988, n. 69 </em></td><td valign='center'>urn:nir:stato:decreto.legge:1988-03-13;69<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1988-03-13;69</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1988-03-13;69<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 1 del decreto-legge 25 maggio 1994, n. 313 </em></td><td valign='center'>urn:nir:stato:decreto.legge:1994-05-25;313~art1<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1994-05-25;313~art1</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1994-05-25;313~art1<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decretolegge 27 gennaio 1992, n. 120 </em></td><td valign='center'>urn:nir:stato:decreto.legge:1992-01-27;120<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1992-01-27;120</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1992-01-27;120<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 5, comma 10, del decreto-legge n. 143/1991 </em></td><td valign='center'>urn:nir:stato:decreto.legge:1991;143~art5-com10<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1991;143~art5-com10</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1991;143~art5-com10<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 1, comma 4-quinquies, del d.l. n. 413 del 1989 </em></td><td valign='center'>urn:nir:stato:decreto.legge:1989;413~art1-com4quinquies<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1989;413~art1-com4quinquies</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge:1989;413~art1-com4quinquies<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto legislativo 7 agosto 1997, n. 279 </em></td><td valign='center'>urn:nir:stato:decreto.legislativo:1997-08-07;279<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-08-07;279</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-08-07;279<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> tabella C allegata al decreto legislativo n. 279 </em></td><td valign='center'>urn:nir:stato:decreto.legislativo:;279:tabella.c<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:decreto.legislativo:;279</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:;279:tabella.c<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> D.Lgs. n. 279 del 1997 </em></td><td valign='center'>urn:nir:stato:decreto.legislativo:1997;279<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997;279</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997;279<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Titolo III del D.Lgs. 7 agosto 1997, n. 279 </em></td><td valign='center'>urn:nir:stato:decreto.legislativo:1997-08-07;279~tit3<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-08-07;279~tit3</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-08-07;279~tit3<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 51, comma 10, lett. a), del D.Lgs. n. 22/1997 </em></td><td valign='center'>urn:nir:stato:decreto.legislativo:1997;22~art51-com10-leta<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997;22~art51-com10-leta</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997;22~art51-com10-leta<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 4 del decreto legislativo 26 maggio 1997, n. 153 </em></td><td valign='center'>urn:nir:stato:decreto.legislativo:1997-05-26;153~art4<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-05-26;153~art4</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1997-05-26;153~art4<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 107 del decreto legislativo n. 385/1993 </em></td><td valign='center'>urn:nir:stato:decreto.legislativo:1993;385~art107<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1993;385~art107</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1993;385~art107<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> DLgs 12- 4-48, n. 1010 </em></td><td valign='center'>urn:nir:stato:decreto.legislativo:1948-04-12;1010<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1948-04-12;1010</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo:1948-04-12;1010<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto del Presidente della Repubblica 13 febbraio 2001, n. 123 </em></td><td valign='center'>urn:nir:presidente.repubblica:decreto:2001-02-13;123<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:2001-02-13;123</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:2001-02-13;123<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> D.P.R. 28 dicembre 1985, n. 1092 </em></td><td valign='center'>urn:nir:presidente.repubblica:decreto:1985-12-28;1092<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1985-12-28;1092</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1985-12-28;1092<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 62 del decreto del Presidente della Repubblica n. 554/1999 </em></td><td valign='center'>urn:nir:presidente.repubblica:decreto:1999;554~art62<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1999;554~art62</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1999;554~art62<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> articoli 3 e 5 del decreto del Presidente della Repubblica n. 633/1972 </em></td><td valign='center'>urn:nir:presidente.repubblica:decreto:1972;633~art3<br>urn:nir:presidente.repubblica:decreto:1972;633~art5<br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:presidente.repubblica:decreto:1972;633</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1972;633~art3<br>urn:nir:presidente.repubblica:decreto:1972;633~art5<br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 19 del d.p.r. n. 382 del 1980 </em></td><td valign='center'>urn:nir:presidente.repubblica:decreto:1980;382~art19<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:presidente.repubblica:decreto:1980;382</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1980;382~art19<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 44, comma 2 del DPR 24-7-77 n. 616 </em></td><td valign='center'>urn:nir:presidente.repubblica:decreto:1977-07-24;616~art44-com2<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1977-07-24;616~art44-com2</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1977-07-24;616~art44-com2<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> DPR 616/77 </em></td><td valign='center'>urn:nir:presidente.repubblica:decreto:1977;616<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1977;616</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1977;616<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> legge costituzionale 26 febbraio 1948, n. 2 </em></td><td valign='center'>urn:nir:stato:legge.costituzionale:1948-02-26;2<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:1948-02-26;2</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:1948-02-26;2<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 3, legge Cost. 18 ottobre 2001, n. 3 </em></td><td valign='center'>urn:nir:stato:legge.costituzionale:2001-10-18;3~art3<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:2001-10-18;3~art3</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:2001-10-18;3~art3<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> L. costituzionale 26 febbraio 1948, n. 4 </em></td><td valign='center'>urn:nir:stato:legge.costituzionale:1948-02-26;4<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:1948-02-26;4</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:1948-02-26;4<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> L. cost. 26 febbraio 1948, n. 5, art. 85 </em></td><td valign='center'>urn:nir:stato:legge.costituzionale:1948-02-26;5~art85<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:legge.costituzionale:1948-02-26;5</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge.costituzionale:1948-02-26;5~art85<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> regio decreto 23 maggio 1924, n. 827 </em></td><td valign='center'>urn:nir:stato:regio.decreto:1924-05-23;827<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1924-05-23;827</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1924-05-23;827<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> R.D. 3 giugno 1926, n.941 </em></td><td valign='center'>urn:nir:stato:regio.decreto:1926-06-03;941<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1926-06-03;941</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1926-06-03;941<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> RD 28-1-1935, n. 145 </em></td><td valign='center'>urn:nir:stato:regio.decreto:1935-01-28;145<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1935-01-28;145</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1935-01-28;145<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> regio decreto-legge 15 marzo 1927, n. 436 </em></td><td valign='center'>urn:nir:stato:regio.decreto.legge:1927-03-15;436<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1927-03-15;436</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1927-03-15;436<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Regio decreto-legge 30 ottobre 1943, n. 2/B </em></td><td valign='center'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-B<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:regio.decreto.legge:1943-10-30;2</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-b<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Regio D.L. 30 ottobre 1943, n. 2/B </em></td><td valign='center'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-B<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:regio.decreto.legge:1943-10-30;2</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-b<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> R.D. legge 30 ottobre 1943 n. 2/B </em></td><td valign='center'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-B<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:regio.decreto.legge:1943-10-30;2</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1943-10-30;2-b<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> R. decreto-legge 14 dicembre 1936-XV, n. 2374 </em></td><td valign='center'>urn:nir:stato:regio.decreto.legge:1936-12-14;2374<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:regio.decreto.legge:1936-12-14</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1936-12-14;2374<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 3 del R.D.L. 19 gennaio 1939, n. 295 </em></td><td valign='center'>urn:nir:stato:regio.decreto.legge:1939-01-19;295~art3<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1939-01-19;295~art3</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1939-01-19;295~art3<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> RDL 2 aprile 1885, n. 3095 </em></td><td valign='center'>urn:nir:stato:regio.decreto.legge:1885-04-02;3095<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1885-04-02;3095</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legge:1885-04-02;3095<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 5 del r.d.lgs. n. 511 del 1946 </em></td><td valign='center'>urn:nir:stato:regio.decreto.legislativo:1946;511~art5<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legislativo:1946;511~art5</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto.legislativo:1946;511~art5<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Decreto del capo del governo 15 ottobre 1938, n. 1783 </em></td><td valign='center'>urn:nir:capo.governo:decreto:1938-10-15;1783<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.governo:decreto:1938-10-15;1783<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Decreto luogotenenziale 12 aprile 1946, n. 627 </em></td><td valign='center'>urn:nir:stato:decreto.luogotenenziale:1946-04-12;627<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.luogotenenziale:1946-04-12;627<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Decreto legislativo luogotenenziale 13 marzo 1945, n. 116 </em></td><td valign='center'>urn:nir:stato:decreto.legislativo.luogotenenziale:1945-03-13;116<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo.luogotenenziale:1945-03-13;116<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> D.Lgs. Luogotenenziale 13 marzo 1945, n. 116 </em></td><td valign='center'>urn:nir:stato:decreto.legislativo.luogotenenziale:1945-03-13;116<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legislativo.luogotenenziale:1945-03-13;116<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Decreto-legge luogotenenziale 25 giugno 1944, n. 151 </em></td><td valign='center'>urn:nir:stato:decreto.legge.luogotenenziale:1944-06-25;151<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge.luogotenenziale:1944-06-25;151<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> D.L. luogotenenziale 10 agosto 1944, n. 181 </em></td><td valign='center'>urn:nir:stato:decreto.legge.luogotenenziale:1944-08-10;181<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge.luogotenenziale:1944-08-10;181<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> D. L. L. 7 gennaio 1946, n. 1 </em></td><td valign='center'>urn:nir:stato:decreto.legge.luogotenenziale:1946-01-07;1<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:legge:1946-01-07;1</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:decreto.legge.luogotenenziale:1946-01-07;1<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto presidenziale 18 gennaio 1954,  n. 18 </em></td><td valign='center'>urn:nir:presidente.repubblica:decreto:1954-01-18;18<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1954-01-18;18<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto legislativo presidenziale 27 giugno 1946, n. 38 </em></td><td valign='center'>urn:nir:presidente.repubblica:decreto.legislativo:1946-06-27;38<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto.legislativo:1946-06-27;38<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> D. Lgs. Presidenziale 25 giugno 1946, n. 12 </em></td><td valign='center'>urn:nir:presidente.repubblica:decreto.legislativo:1946-06-25;12<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto.legislativo:1946-06-25;12<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto del Capo provvisorio dello Stato n. 629 del 21 aprile 1947 </em></td><td valign='center'>urn:nir:capo.provvisorio.stato:decreto:1947-04-21;629<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto:1947-04-21;629<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto del Capo provvisorio dello Stato 18 aprile 1947, n. 266 </em></td><td valign='center'>urn:nir:capo.provvisorio.stato:decreto:1947-04-18;266<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto:1947-04-18;266<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto legislativo del Capo provvisorio dello Stato 17 luglio 1947, n. 691 </em></td><td valign='center'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-07-17;691<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-07-17;691<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> D.Lgs. del Capo Provvisorio dello Stato 22 agosto 1947, n. 1097 </em></td><td valign='center'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-08-22;1097<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-08-22;1097<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> articolo 8 del DLgs CPS 15-9-1947, n. 896 </em></td><td valign='center'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-09-15;896~art8<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto.legislativo:1947-09-15;896~art8<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 13 del DLCPS 15-9-1947, n. 896 </em></td><td valign='center'>urn:nir:capo.provvisorio.stato:decreto.legge:1947-09-15;896~art13<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:capo.provvisorio.stato:decreto.legge:1947-09-15;896~art13<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Determinazione intercommissariale 22 settembre 1943, n. 753 </em></td><td valign='center'>urn:nir::determinazione.intercommissariale:1943-09-22;753<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::determinazione.intercommissariale:1943-09-22;753<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 250 del Regolamento 5-6-1940, n. 635 </em></td><td valign='center'>urn:nir::regolamento:1940-06-05;635~art250<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::regolamento:1940-06-05;635~art250</td><td valign='center' bgcolor='DarkOrange'>CELEX:31940R0635<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> ordinanza ministeriale 3 aprile 1987, n. 135 </em></td><td valign='center'>urn:nir:ministero.:ordinanza:1987-04-03;135<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:ordinanza:1987-04-03;135<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> ordinanze ministeriali 24 gennaio 1987, 3 aprile 1987, n. 134 </em></td><td valign='center'>urn:nir:ministero.:ordinanza:1987-01-24;<br>urn:nir:ministero.:ordinanza:1987-04-03;134<br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:ordinanza:1987-01-24;<br>urn:nir:ministero.:ordinanza:1987-04-03;134<br></td></tr><tr style='font-size:10px'><td valign='center'><em> regolamento ministeriale 21 giugno 2000, n. 217 </em></td><td valign='center'>urn:nir:ministero.:regolamento:2000-06-21;217<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:regolamento:2000-06-21;217<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Decreto 26 giugno 2000, n. 219 </em></td><td valign='center'>urn:nir::decreto:2000-06-26;219<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::decreto:2000-06-26;219</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::decreto:2000-06-26;219<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> D. 27-9-1962, n. 1481 </em></td><td valign='center'>urn:nir::decreto:1962-09-27;1481<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::decreto:1962-09-27;1481<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Decreto ministeriale 16 gennaio 1997, n. 253 </em></td><td valign='center'>urn:nir:ministero.:decreto:1997-01-16;253<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:1997-01-16;253</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:1997-01-16;253<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto del Ministro dei lavori pubblici 2 aprile 1968, n. 1444 </em></td><td valign='center'>urn:nir:ministero.lavori.pubblici:decreto:1968-04-02;1444<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.lavori.pubblici:decreto:1968-04-02;1444<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto del Ministero delle finanze del 25 novembre 1998, n. 418 </em></td><td valign='center'>urn:nir:ministero.finanze:decreto:1998-11-25;418<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.finanze:decreto:1998-11-25;418<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare applicativa del MLPS n. 174 del 23 dicembre 1996 </em></td><td valign='center'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1996-12-23;174<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1996-12-23;174<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto ministeriale 24 agosto 1940, n. 2984, art. 638 </em></td><td valign='center'>urn:nir:ministero.:decreto:1940-08-24;2984~art638<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:ministero.:decreto:1940-08-24;2984</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:1940-08-24;2984~art638<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto ministeriale 18 settembre 1997 </em></td><td valign='center'>urn:nir:ministero.:decreto:1997-09-18;<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:ministero.:decreto:1997-09-18</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:1997-09-18;<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> allegato D del decreto ministeriale 22 dicembre 2000 </em></td><td valign='center'>urn:nir:ministero.:decreto:2000-12-22;:allegato.d<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:ministero.:decreto:2000-12-22</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:2000-12-22;:allegato.d<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 15 del D.M. 27 marzo 2001 </em></td><td valign='center'>urn:nir:ministero.:decreto:2001-03-27;~art15<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:ministero.:decreto:2001-03-27~art15</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:2001-03-27;~art15<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> DM del 22 maggio 1998 </em></td><td valign='center'>urn:nir:ministero.:decreto:1998-05-22;<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:ministero.:decreto:1998-05-22</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:1998-05-22;<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> comma 4 art.6 DM 04/04/2000 </em></td><td valign='center'>urn:nir:ministero.:decreto:2000-04-04;~art6-com4<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:ministero.:decreto:2000-04-04~art6-com4</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:2000-04-04;~art6-com4<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto MICA 23 dicembre 1997 </em></td><td valign='center'>urn:nir:ministero.industria.commercio.artigianato:decreto:1997-12-23;<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.industria.commercio.artigianato:decreto:1997-12-23;<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Decreto MiPAF del 17 aprile 2003 </em></td><td valign='center'>urn:nir:ministero.politiche.agricole.forestali:decreto:2003-04-17;<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.politiche.agricole.forestali:decreto:2003-04-17;<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Decreto Mi.P.A.F. del 10/08/2001 </em></td><td valign='center'>urn:nir:ministero.politiche.agricole.forestali:decreto:2001-08-10;<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.politiche.agricole.forestali:decreto:2001-08-10;<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 2 del decreto ministeriale del tesoro 22 aprile 1997 </em></td><td valign='center'>urn:nir:ministero.tesoro:decreto:1997-04-22;~art2<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.tesoro:decreto:1997-04-22;~art2<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 2, comma 4, lettera d), del decreto ministeriale D/118/2005 </em></td><td valign='center'>urn:nir:ministero.:decreto:2005;D-118-2005~art2-com4-letd<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:decreto:2005;D-118-2005~art2-com4-letd<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> deliberazione del CIPE del 27 aprile 1995 </em></td><td valign='center'>urn:nir:comitato.interministeriale.programmazione.economica:deliberazione:1995-04-27;<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:comitato.interministeriale.programmazione.economica:deliberazione:1995-04-27;<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> delibera CIPE 8 aprile 1987, n. 157 </em></td><td valign='center'>urn:nir:comitato.interministeriale.programmazione.economica:deliberazione:1987-04-08;157<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:comitato.interministeriale.programmazione.economica:deliberazione:1987-04-08;157<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Deliberazione 8 aprile 1987 n. 157 </em></td><td valign='center'>urn:nir::deliberazione:1987-04-08;157<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::deliberazione:1987-04-08;157</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::deliberazione:1987-04-08;157<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto del Presidente del Consiglio dei Ministri 10 giugno 2004 </em></td><td valign='center'>urn:nir:presidente.consiglio.ministri:decreto:2004-06-10;<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:presidente.consiglio.ministri:decreto:2004-06-10</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:decreto:2004-06-10;<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> DPCM 25 febbraio 2011 </em></td><td valign='center'>urn:nir:presidente.consiglio.ministri:decreto:2011-02-25;<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:presidente.consiglio.ministri:decreto:2011-02-25</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:decreto:2011-02-25;<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> DPCM del 3 giugno 1986 </em></td><td valign='center'>urn:nir:presidente.consiglio.ministri:decreto:1986-06-03;<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:presidente.consiglio.ministri:decreto:1986-06-03</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:decreto:1986-06-03;<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> O.P.C.M. n. 3267 del 7 marzo 2003 </em></td><td valign='center'>urn:nir:presidente.consiglio.ministri:ordinanza:2003-03-07;3267<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:ordinanza:2003-03-07;3267</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:ordinanza:2003-03-07;3267<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> O.P.C.M. n. 3267/2003 </em></td><td valign='center'>urn:nir:presidente.consiglio.ministri:ordinanza:2003;3267<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:ordinanza:2003;3267</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.consiglio.ministri:ordinanza:2003;3267<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare n. 40/8/403 del 22 dicembre 1980 </em></td><td valign='center'>urn:nir::circolare:1980-12-22;40-8-403<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1980-12-22;40-8-403<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare n. 24 del 19 maggio 1979 </em></td><td valign='center'>urn:nir::circolare:1979-05-19;24<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1979-05-19;24<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare n. 73/E del 27 maggio 1994 </em></td><td valign='center'>urn:nir::circolare:1994-05-27;73-E<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1994-05-27;73-e<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare del 19 dicembre 1997, n. 320/E </em></td><td valign='center'>urn:nir::circolare:1997-12-19;320-E<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1997-12-19;320-e<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare del Ministero delle Finanze n. 123/E del 12 maggio 1998 </em></td><td valign='center'>urn:nir:ministero.finanze:circolare:1998-05-12;123-E<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.finanze:circolare:1998-05-12;123-e<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolari n. 30/E del 27 gennaio 1998 e n. 186/E del 15 luglio 1998 </em></td><td valign='center'>urn:nir::circolare:1998-01-27;30-E<br>urn:nir::circolare:1998-07-15;186-E<br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1998-01-27;30-e<br>urn:nir::circolare:1998-07-15;186-e<br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare n. 326/E del 1997 </em></td><td valign='center'>urn:nir::circolare:1997;326-E<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1997;326-e<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare 9 settembre 1997, n. D/686 </em></td><td valign='center'>urn:nir::circolare:1997-09-09;D-686<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1997-09-09;d-686<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare ministeriale n. D/686 del 9 settembre 1997 </em></td><td valign='center'>urn:nir:ministero.:circolare:1997-09-09;D-686<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.:circolare:1997-09-09;d-686<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare n. 234363 del 20 novembre 1997 </em></td><td valign='center'>urn:nir::circolare:1997-11-20;234363<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::circolare:1997-11-20;234363<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolari Ministero del lavoro e P.S n. 98 del 12 agosto 1995 e n. 130 del 25 ottobre 1995 </em></td><td valign='center'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1995-08-12;98<br>urn:nir:ministero.lavoro.politiche.sociali:circolare:1995-10-25;130<br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1995-08-12;98<br>urn:nir:ministero.lavoro.politiche.sociali:circolare:1995-10-25;130<br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare n. 101 del 17 luglio 1997 del Ministero del lavoro e P.S. </em></td><td valign='center'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1997-07-17;101<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1997-07-17;101<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Allegato 1 alla circolare Agea n. 13 del 4 maggio 2005 </em></td><td valign='center'>urn:nir:agenzia.erogazioni.agricoltura:circolare:2005-05-04;13:allegato.1<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:agenzia.erogazioni.agricoltura:circolare:2005-05-04;13:allegato.1<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> lettera circolare n. 59169 dell'11 settembre 1998 del Ministero del lavoro e P.S. </em></td><td valign='center'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1998-09-11;59169<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.lavoro.politiche.sociali:circolare:1998-09-11;59169<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto interministeriale 24 aprile 2002 </em></td><td valign='center'>urn:nir:ministero.+ministero.:decreto:2002-04-24;<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.+ministero.:decreto:2002-04-24;<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto interministeriale 10 ottobre 1992 del Ministro delle finanze e del Ministro di grazia e giustizia </em></td><td valign='center'>urn:nir:ministero.finanze+ministero.grazia.giustizia:decreto:1992-10-10;<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.finanze+ministero.grazia.giustizia:decreto:1992-10-10;<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto interministeriale n. 983 del 23 giugno 1988 </em></td><td valign='center'>urn:nir:ministero.+ministero.:decreto:1988-06-23;983<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.+ministero.:decreto:1988-06-23;983<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto interministeriale n. 95-T del 9 agosto 1999 </em></td><td valign='center'>urn:nir:ministero.+ministero.:decreto:1999-08-09;95-T<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.+ministero.:decreto:1999-08-09;95-t<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 8, commi 6 e 7 del decreto interministeriale n. 272/2002 </em></td><td valign='center'>urn:nir:ministero.+ministero.:decreto:2002;272~art8-com6<br>urn:nir:ministero.+ministero.:decreto:2002;272~art8-com7<br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:ministero.+ministero.:decreto:2002;272~art8-com6<br>urn:nir:ministero.+ministero.:decreto:2002;272~art8-com7<br></td></tr><tr style='font-size:10px'><td valign='center'><em> ordinanza n. 3 del 3 aprile 2003 </em></td><td valign='center'>urn:nir::ordinanza:2003-04-03;3<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::ordinanza:2003-04-03;3</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::ordinanza:2003-04-03;3<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> provvedimento n. 1 del 31 marzo 2004 </em></td><td valign='center'>urn:nir::provvedimento:2004-03-31;1<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::provvedimento:2004-03-31;1</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::provvedimento:2004-03-31;1<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> provvedimento n. 1/2003 del 21 marzo 2003 </em></td><td valign='center'>urn:nir::provvedimento:2003-03-21;1<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir::provvedimento:2003-03-21;1-2003</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::provvedimento:2003-03-21;1<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> atto di Determinazione n. 36 del 21 luglio 2000 </em></td><td valign='center'>urn:nir::determinazione:2000-07-21;36<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir::determinazione:2000-07-21;36<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> risoluzione 135/E/03 del 17 giugno 2003 dell'Agenzia delle entrate </em></td><td valign='center'>urn:nir:agenzia.entrate:risoluzione:2003-06-17;135-E-03<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:agenzia.entrate:risoluzione:2003-06-17;135-E-03<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> risoluzione n. 41/E/02 dell'Agenzia delle entrate </em></td><td valign='center'>urn:nir:agenzia.entrate:risoluzione:2002;41-E-02<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:agenzia.entrate:risoluzione:2002;41-E-02<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> circolare Agea n. 17 del 13 maggio 2005 </em></td><td valign='center'>urn:nir:agenzia.erogazioni.agricoltura:circolare:2005-05-13;17<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:agenzia.erogazioni.agricoltura:circolare:2005-05-13;17<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 9 del decreto dirigenziale n. 137 del 7 aprile 2005 </em></td><td valign='center'>urn:nir:direzione.:decreto:2005-04-07;137~art9<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:direzione.:decreto:2005-04-07;137~art9<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 9 del decreto dirigenziale D/137 del 7 aprile 2005 </em></td><td valign='center'>urn:nir:direzione.:decreto:2005-04-07;D-137~art9<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:direzione.:decreto:2005-04-07;D-137~art9<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> legge regionale 6 luglio 1998, n. 24 </em></td><td valign='center'>urn:nir:regione.:legge:1998-07-06;24<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1998-07-06;24</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1998-07-06;24<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 5 della legge regionale n. 16 del 4-5-1974 </em></td><td valign='center'>urn:nir:regione.:legge:1974-05-04;16~art5<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1974-05-04;16~art5</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1974-05-04;16~art5<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> articoli 14 e 110 della L.R. 6-5-1977, n. 28 </em></td><td valign='center'>urn:nir:regione.:legge:1977-05-06;28~art14<br>urn:nir:regione.:legge:1977-05-06;28~art110<br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:regione.:legge:1977-05-06;28</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1977-05-06;28~art14<br>urn:nir:regione.:legge:1977-05-06;28~art110<br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 21 della LR 12 marzo 1977, n.18 </em></td><td valign='center'>urn:nir:regione.:legge:1977-03-12;18~art21<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1977-03-12;18~art21</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1977-03-12;18~art21<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> LLRR 22-8-77, n. 58 e 17-2-79, n. 9 </em></td><td valign='center'>urn:nir:regione.:legge:1977-08-22;58<br>urn:nir:regione.:legge:1979-02-17;9<br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:legge:1977-08-22;58<br>urn:nir:regione.:legge:1979-02-17;9<br></td></tr><tr style='font-size:10px'><td valign='center'><em> regolamento regionale n. 1 del 2 gennaio 1974 </em></td><td valign='center'>urn:nir:regione.:regolamento:1974-01-02;1<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:regolamento:1974-01-02;1</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:regolamento:1974-01-02;1<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> artt. 3 e 4 dello statuto regionale </em></td><td valign='center'>urn:nir:regione.:statuto:;~art3<br>urn:nir:regione.:statuto:;~art4<br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:regione.:statuto:;~art3<br>urn:nir:regione.:statuto:;~art4<br></td></tr><tr style='font-size:10px'><td valign='center'><em> delibera del consiglio regionale n. 962 del 1° settembre 1989 </em></td><td valign='center'>urn:nir:consiglio.regione.:deliberazione:1989-09-01;962<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:consiglio.regione.:deliberazione:1989-09-01;962<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> delibera della giunta comunale n. 107 dell'11 agosto 1998 </em></td><td valign='center'>urn:nir:giunta.comune.:deliberazione:1998-08-11;107<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:giunta.comune.:deliberazione:1998-08-11;107<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> decreto del presidente della Giunta regionale della Lombardia n. 8980 del 20 maggio 2004 </em></td><td valign='center'>urn:nir:presidente.giunta.regione.lombardia:decreto:2004-05-20;8980<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='DarkGrey'><br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> leggi provinciali 11 settembre 1998, n. 10 e 11 agosto 1998, n. 9 </em></td><td valign='center'>urn:nir:provincia.:legge:1998-09-11;10<br>urn:nir:provincia.:legge:1998-08-11;9<br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:provincia.:legge:1998-09-11;10<br>urn:nir:provincia.:legge:1998-08-11;9<br></td></tr><tr style='font-size:10px'><td valign='center'><em> articolo 87, quinto comma, della Costituzione </em></td><td valign='center'>urn:nir:stato:costituzione:;~art87-com5<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:costituzione:1947-12-27~art87-com5</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:costituzione:;~art87-com5<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 2043 cod. civ. </em></td><td valign='center'>urn:nir:stato:codice.civile:1942-03-16;262~art2043<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.civile:1942-03-16;262~art2043</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.civile:1942-03-16;262~art2043<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 110 cod. pen. </em></td><td valign='center'>urn:nir:stato:codice.penale:1930-10-19;1398~art110<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.penale:1930-10-19;1398~art110</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.penale:1930-10-19;1398~art110<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> articolo 143 del codice di procedura civile </em></td><td valign='center'>urn:nir:stato:codice.procedura.civile:1940-10-28;1443~art143<br><br></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.procedura.civile:1940-10-28;1443~art143</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:codice.procedura.civile:1940-10-28;1443~art143<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> Articolo 696 del codice di procedura penale </em></td><td valign='center'>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art696<br><br></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:codice.procedura.penale:1988-09-22;447~art696</td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art696<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 192 commi 3 e 4 C.P.P. </em></td><td valign='center'>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art192-com3<br>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art192-com4<br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art192-com3<br>urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447~art192-com4<br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 67, comma 1, n. 2, L. Fall. </em></td><td valign='center'>urn:nir:stato:regio.decreto:1942-03-16;267~art67-com1-num2<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='DarkOrange'>urn:nir:stato:regio.decreto:1942-03-16;267~art67-com1<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 34 della legge finanziaria 2003 </em></td><td valign='center'>urn:nir:stato:legge:2002-12-27;289~art34<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2002-12-27;289~art34<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> ultimo periodo del comma 17 dell'art. 29 della legge finanziaria 2003 </em></td><td valign='center'>urn:nir:stato:legge:2002-12-27;289~art29-com17<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:legge:2002-12-27;289~art29-com17<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> comma 7 dell'art. 110 T.U.L.P.S. </em></td><td valign='center'>urn:nir:stato:regio.decreto:1931-06-18;773~art110-com7<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1931-06-18;773~art110-com7<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 41, comma 2, del TUIR </em></td><td valign='center'>urn:nir:presidente.repubblica:decreto:1986-12-22;917~art41-com2<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:presidente.repubblica:decreto:1986-12-22;917~art41-com2<br><br></td></tr><tr style='font-size:10px'><td valign='center'><em> artt. 127, 128 e 189 del TU delle LLSS </em></td><td valign='center'>urn:nir:stato:regio.decreto:1934-07-27;1265~art127<br>urn:nir:stato:regio.decreto:1934-07-27;1265~art128<br>urn:nir:stato:regio.decreto:1934-07-27;1265~art189</td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:regio.decreto:1934-07-27;1265~art127<br>urn:nir:stato:regio.decreto:1934-07-27;1265~art128<br>urn:nir:stato:regio.decreto:1934-07-27;1265~art189</td></tr><tr style='font-size:10px'><td valign='center'><em> artt. 7 e 10 del Testo Unico 5-6-1939, n. 1016 </em></td><td valign='center'>urn:nir:stato:testo.unico:1939-06-05;1016~art7<br>urn:nir:stato:testo.unico:1939-06-05;1016~art10<br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:testo.unico:1939-06-05;1016~art7<br>urn:nir:stato:testo.unico:1939-06-05;1016~art10<br></td></tr><tr style='font-size:10px'><td valign='center'><em> art. 76 del TU 5-6-1939, n.1016 </em></td><td valign='center'>urn:nir:stato:testo.unico:1939-06-05;1016~art76<br><br></td><td valign='center' bgcolor='DarkGrey'></td><td valign='center' bgcolor='MediumSeaGreen'>urn:nir:stato:testo.unico:1939-06-05;1016~art76<br><br></td></tr></table>
-<section class="main-content">
-<h3><a id="report" class="anchor" href="#report" aria-hidden="true"><span class="octicon octicon-link"></span></a>Report</h3><ul><li>Totale citazioni testuali: <strong>146</strong></li></ul><ul><li>Totale riferimenti: <strong>164</strong></li></ul><table align='center'><tr bgcolor='LightGrey'><td>&nbsp;</td><td align='left'><strong>xmLegesLinker 1.13a (-r ni)</strong></td><td align='left'><strong>Linkoln 0.8</strong></td></tr><tr><td>Riferimenti trovati</td><td>74/164 (45.1%)</td><td>163/164 (99.4%)</td></tr><tr bgcolor='LightGrey'><td>Riferimenti non trovati</td><td>90/164 (54.9%)</td><td>1/164 (0.6%)</td></tr><tr><td>Riferimenti trovati<br>con identificatore corretto</td><td>49/164 (29.9%)</td><td>161/164 (98.2%)</td></tr><tr bgcolor='LightGrey'><td>Riferimenti trovati<br>con identificatore errato</td><td>25/164 (15.2%)</td><td>2/164 (1.2%)</td></tr><tr><td>Citazioni completamente corrette<br>(riferimenti trovati e identificatori corretti)</td><td>49/146 (33.6%)</td><td>143/146 (97.9%)</td></tr></table>
 
 
 
@@ -57,15 +1379,17 @@ La tabella di copertura è composta dalle seguenti colonne:
 
 
 
+		<footer class="site-footer">
+			<span class="site-footer-owner"><a
+				href="https://github.com/Ittig/Linkoln">Linkoln</a> is maintained by
+				<a href="http://www.ittig.cnr.it">Ittig</a>.</span>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/Ittig/Linkoln">Linkoln</a> is maintained by <a href="http://www.ittig.cnr.it">Ittig</a>.</span>
+		</footer>
 
-      </footer>
+	</section>
 
-</section>
-
-</body></html>
+</body>
+</html>
 
 
 

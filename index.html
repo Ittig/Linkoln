@@ -148,9 +148,37 @@
 
 		<h3>
 			<a id="linkoln" class="anchor" href="#linkoln" aria-hidden="true"><span
-				class="octicon octicon-link"></span></a> Linkoln
+				class="octicon octicon-link"></span></a> Il software
 		</h3>
 
+<p style="text-align: justify;">
+<em>Linkoln</em> è un progetto <em>open-source</em> sviluppato in Java, rilasciato con licenza 
+<em>GPL ver. 3</em> e disponibile sotto forma di libreria <em>jar</em>. 
+La libreria può essere facilmente integrata all'interno di <em>web applications</em> o in 
+applicazioni <em>stand-alone</em>, oppure può essere utilizzata direttamente da linea di comando.
+
+<p style="text-align: justify;">
+Il processo di riconoscimento dei riferimenti normativi effettuato da <em>Linkoln</em> è basato 
+sul lavoro di diversi moduli specializzati nell'identificazione dei singoli campi che compongono 
+la citazione testuale. I moduli vengono attivati in serie e producono una marcatura interna e 
+temporanea del testo piatto. Tale marcatura viene sfruttata per verificare se una determinata 
+porzione di testo sia o meno un riferimento normativo attraverso il confronto con dei 
+<em>pattern</em> prestabiliti. Infine <em>Linkoln</em> si occupa di produrre gli identificatori 
+standard in <em>urn:nir</em> e <em>CELEX</em> per i riferimenti normativi trovati. 
+I moduli di <em>Linkoln</em> sono stati implementati con la libreria 
+<a href="http://jflex.de" target="_blank">JFlex</a>, che, attraverso la definizione di espressioni 
+regolari, regole e stati, permette la realizzazione di analizzatori lessicali efficienti.
+
+<p style="text-align: justify;">
+<em>Linkoln</em> è disponibile in versione dimostrativa attraverso questa 
+<a href="http://godel.ittig.cnr.it:8081/Linkoln/">web demo</a>. Dalla stessa pagina è inoltre 
+possibile inviare segnalazioni riguardanti errori o mancati riconoscimenti. Il software utilizza
+testo piatto come <em>input</em> e fornisce due tipi di <em>output</em>: 
+<ul><li>l'elenco dei riferimenti normativi nell'ordine in cui questi compaiono nel testo;</li>
+<li>il testo originale con i riferimenti evidenziati sotto forma di link <em>HTML</em>.</li>
+</ul>
+
+<p>
 
 		<img src="linkoln-action.png">
 

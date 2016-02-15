@@ -2,8 +2,8 @@
 
 package it.cnr.ittig.linkoln.scanner;
 
-import it.cnr.ittig.linkoln.rif.EuLegalRif;
-import it.cnr.ittig.linkoln.rif.LegalRif;
+import it.cnr.ittig.linkoln.ref.EuLegalRef;
+import it.cnr.ittig.linkoln.ref.LegalRef;
 
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -256,21 +256,21 @@ public class Serializer {
 		return output.toString();
 	}
 	
-	private Map<Integer,LegalRif> id2rif = null;
+	private Map<Integer,LegalRef> id2rif = null;
 	
-	public void setRifsMap(Map<Integer,LegalRif> id2r) {
+	public void setRifsMap(Map<Integer,LegalRef> id2r) {
 		
 		id2rif = id2r;
 	}
 	
 	
 	private String id = "";
-	LegalRif rif = null;
+	LegalRef rif = null;
 	
-	private void serialize(LegalRif rif) {
+	private void serialize(LegalRef rif) {
 	
 		String html = "";
-		if(rif instanceof EuLegalRif) { 
+		if(rif instanceof EuLegalRef) { 
 			html = rif.getCelexHtml();
 		} else {
 			html = rif.getUrnLexHtml();

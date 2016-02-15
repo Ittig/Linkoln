@@ -2,9 +2,9 @@
 
 package it.cnr.ittig.linkoln.scanner;
 
-import it.cnr.ittig.linkoln.rif.EuLegalRif;
-import it.cnr.ittig.linkoln.rif.LegalRif;
-import it.cnr.ittig.linkoln.rif.LegalRifFactory;
+import it.cnr.ittig.linkoln.ref.EuLegalRef;
+import it.cnr.ittig.linkoln.ref.LegalRef;
+import it.cnr.ittig.linkoln.ref.LegalRefFactory;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -270,15 +270,15 @@ public class Spawner {
 		return output.toString();
 	}
 	
-	private Collection<LegalRif> rifs = new ArrayList<LegalRif>();
+	private Collection<LegalRef> rifs = new ArrayList<LegalRef>();
 	
-	public Collection<LegalRif> getRifs() {
+	public Collection<LegalRef> getRifs() {
 		
 		return rifs;
 	}
 		
 	private StringBuilder mtext = null;
-	private Collection<LegalRif> mrifs = null;
+	private Collection<LegalRef> mrifs = null;
 	
 	private int idCount = 0;
 	
@@ -287,7 +287,7 @@ public class Spawner {
 		String mt = Util.removeTags(mtext.toString()).trim();
 		
 		//Aggiungi il raw text del rif multiplo
-		for(LegalRif rif : mrifs) {
+		for(LegalRef rif : mrifs) {
 			rif.setMtext(mt);
 		}		
 	}
@@ -296,7 +296,7 @@ public class Spawner {
 		
 		idCount++;
 		
-		LegalRif rif = LegalRifFactory.getLegalRif(	Util.getTipo(text), 
+		LegalRef rif = LegalRefFactory.getLegalRef(	Util.getTipo(text), 
 													Util.getEmanante(text), 
 													Util.getMixed(text) 
 													);
@@ -314,7 +314,7 @@ public class Spawner {
 		rif.setText(Util.getText(text).trim());
 		
 		String html = "";
-		if(rif instanceof EuLegalRif) { 
+		if(rif instanceof EuLegalRef) { 
 			html = rif.getCelexHtml();
 		} else {
 			html = rif.getUrnLexHtml();
@@ -695,7 +695,7 @@ public class Spawner {
           }
         case 11: break;
         case 5: 
-          { mrifs = new ArrayList<LegalRif>();
+          { mrifs = new ArrayList<LegalRef>();
 					mtext = new StringBuilder(); 
 					yybegin(sRifs);
           }

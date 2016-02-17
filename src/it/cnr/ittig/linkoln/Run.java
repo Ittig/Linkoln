@@ -14,7 +14,7 @@ public class Run {
 	public static void main(String[] args) {
 
 		/*
-		 * java -jar it.cnr.ittig.linkoln.Run inputFile.txt
+		 * java -jar it.cnr.ittig.linkoln.Run input_file.txt
 		 */
 		
 
@@ -68,7 +68,6 @@ public class Run {
 	    StringBuilder stringBuilder = new StringBuilder();
 	    String ls = System.getProperty("line.separator");
 	    
-	    //if(charSet.trim().equals("")) {
 	    if(charSet == null) {
 	    	reader = new BufferedReader( new InputStreamReader(
 	    			new FileInputStream(inputFile)));
@@ -89,9 +88,9 @@ public class Run {
 	
 	private static void help() {
 		
-		String help = "Linkoln v." + Linkoln.version;
+		String help = "\n\nLinkoln (v." + Linkoln.version + ")";
 		
-		help += "\n---\n java -jar it.cnr.ittig.linkoln.Run inputFile\n\n";
+		help += "\n\n java -jar ittig-linkoln.jar input_file.txt\n\n";
 		
 		System.out.println(help);
 	}

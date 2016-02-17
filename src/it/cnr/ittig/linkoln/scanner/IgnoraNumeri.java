@@ -452,6 +452,12 @@ public class IgnoraNumeri {
 	
 	private StringBuilder output = new StringBuilder();
 
+	boolean debug = false;
+	
+	public void setDebug(boolean deb) {
+		debug = deb;
+	}
+	
 	public String getOutput() {
 		return output.toString();
 	}
@@ -814,7 +820,11 @@ public class IgnoraNumeri {
           }
         case 9: break;
         case 2: 
-          { output.append("<strong>" + yytext() + "</strong>");
+          { if(debug) {
+						output.append("<strong>" + yytext() + "</strong>"); 
+					} else {
+						output.append( yytext() );
+					}
           }
         case 10: break;
         case 3: 

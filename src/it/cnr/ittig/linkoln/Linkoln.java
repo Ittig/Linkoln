@@ -31,12 +31,26 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Linkoln {
+	/**
+	 * Un oggetto di questa classe rappresenta un'istanza di
+	 * esecuzione dell'analizzatore di riferimenti normativi
+	 * su uno specifico input testuale.
+	 * 
+	 * L'oggetto Linkoln fornisce i metodi per l'impostazione
+	 * dell'input testuale, per il passaggio di eventuali 
+	 * metadati dell'input testuale, configurare l'analisi
+	 * dei riferimenti, i metodi che espongono l'output in forma di:
+	 * - testo con riferimenti marcati con tag <a href="...">
+	 * - testo con riferimenti marcati con <span id="...">
+	 * - Collection di oggetti LegalRif.
+	 * 
+	 */
 
-	public final static String version = "0.8"; 
+	public final static String version = "0.8.3"; 
 	
-	private Map<Integer, LegalRef> id2rif = new TreeMap<Integer, LegalRef>();
+	private Map<Integer, LegalRef> id2ref = new TreeMap<Integer, LegalRef>();
 	
-	private Collection<LegalRef> rifs = new ArrayList<LegalRef>();
+	private Collection<LegalRef> refs = new ArrayList<LegalRef>();
 	
 	private boolean debug = false;
 	
@@ -56,7 +70,7 @@ public class Linkoln {
 	
 	public void run() throws IOException {
 	
-		//if(debug) System.out.println("INPUT TEXT: " + inputText);
+		if(debug) System.out.println("INPUT TEXT: " + inputText);
 		if(inputText.trim().length() < 5) {
 			return;
 		}
@@ -68,13 +82,13 @@ public class Linkoln {
     	lexs.yylex();
     	String output = lexs.getOutput();
     	
-    	//if(debug) System.out.println(output);
+    	if(debug) System.out.println(output);
     	
        	EmanantiNumeri emaNumeri = new EmanantiNumeri(new StringReader(output));
     	emaNumeri.yylex();
     	output = emaNumeri.getOutput();
     	
-    	//if(debug) System.out.println(output);
+    	if(debug) System.out.println(output);
     	
     	AliasCodici aliasCod = new AliasCodici(new StringReader(output));	
     	aliasCod.yylex();
@@ -88,6 +102,8 @@ public class Linkoln {
     	aliasEU.yylex();
     	output = aliasEU.getOutput();
     	
+    	if(debug) System.out.println(output);
+    	
     	EmanantiMinisteri ministeri = new EmanantiMinisteri(new StringReader(output));
     	ministeri.yylex();
     	output = ministeri.getOutput();
@@ -100,15 +116,17 @@ public class Linkoln {
     	principali.yylex();
     	output = principali.getOutput();
 		
+    	if(debug) System.out.println(output);
+    	
     	Tipi tipi = new Tipi(new StringReader(output));
     	tipi.yylex();
     	output = tipi.getOutput();
-		
+		    	
     	//Remove <LEXSEP>
     	output = output.replaceAll("<LEXSEP>", "");
     	output = output.replaceAll("</LEXSEP>", "");
     	
-    	//if(debug) System.out.println(output);
+    	if(debug) System.out.println(output);
     	
     	Date datemarker = new Date(new StringReader(output));
     	datemarker.yylex();
@@ -120,7 +138,7 @@ public class Linkoln {
     	partizioni.yylex();
     	output = partizioni.getOutput();
     	
-    	//if(debug) System.out.println(output);
+    	if(debug) System.out.println(output);
     	
     	PartizioniGruppi gruppipartizioni = new PartizioniGruppi(new StringReader(output));
     	gruppipartizioni.yylex();
@@ -132,9 +150,12 @@ public class Linkoln {
     	numeri.yylex();
     	output = numeri.getOutput();
 		
-    	//if(debug) System.out.println(output);
+    	if(debug) System.out.println(output);
     	
     	IgnoraNumeri ignora = new IgnoraNumeri(new StringReader(output));
+    	if(debug) {
+    		ignora.setDebug(true);
+    	}
     	ignora.yylex();
     	output = ignora.getOutput();
     	
@@ -179,13 +200,13 @@ public class Linkoln {
     	for(LegalRef rif : rsp.getRifs()) {
     		String id = rif.getId().replaceAll("lkrif", "");
     		int num = Integer.valueOf(id);
-    		id2rif.put(num, rif);
+    		id2ref.put(num, rif);
     	}
 		
     	if(debug) System.out.println(output);
     	
     	Serializer ser = new Serializer(new StringReader(output));
-    	ser.setRifsMap(id2rif);
+    	ser.setRifsMap(id2ref);
     	ser.yylex();
     	output = ser.getOutput();
 		
@@ -195,27 +216,26 @@ public class Linkoln {
     	
     	debugText += "<td>" + hrefText + "</td></tr></table>";
    		
-   		for(Integer id : id2rif.keySet()) {   			
-   			rifs.add(id2rif.get(id));
+   		for(Integer id : id2ref.keySet()) {   			
+   			refs.add(id2ref.get(id));
    		}
 	}
 
-	public Collection<LegalRef> getRifs() {
-		return rifs;
+	public Collection<LegalRef> getRefs() {
+		return refs;
 	}
 
-	public String getRifsHtml() {
+	public String getRefsHtml() {
 		/*
 		 * Per ogni legal rif, verifica se è coinvolto in un multiplo e poi scrivi una riga di tabella html
 		 * <tr><td> mtext </td> <td> urn1<br>urn2 </td></tr>
 		 */
 		
 		String prevText = "";
-		//String html = "<p><table border='1' cellspacing='4' cellpadding='10'><tr><td align='center'><strong>FRAMMENTI DI TESTO</strong></td><td align='center'><strong>RIFERIMENTI LEGISLATIVI</strong></td></tr>";
+
 		String html = "<p><table class='table'><tr><td align='center'><strong>FRAMMENTI DI TESTO</strong></td><td align='center'><strong>RIFERIMENTI LEGISLATIVI</strong></td></tr>";
-		//String html = "<p><table class='table'><th><td>FRAMMENTI DI TESTO</td><td>RIFERIMENTI LEGISLATIVI</td></th>";
 		
-		for(LegalRef rif : rifs) {
+		for(LegalRef rif : refs) {
 		
 			if(rif.getMtext().equals(prevText)) {
 				
@@ -224,12 +244,9 @@ public class Linkoln {
 			} else {
 				
 				if( !prevText.equals("")) {
-//					html += "</td></tr></table>";
 					html += "</td></tr>";
 				}
 				
-//				html += "<p><table border='1' cellspacing='4' cellpadding='10'><tr><td> " 
-//							+ rif.getMtext() + " </td><td> " + rif.getHtml();
 				html += "<tr><td> " + "<i>&ldquo;"
 						+ rif.getMtext() + "&rdquo;</i></td><td> " + rif.getHtml();
 			}
@@ -244,9 +261,7 @@ public class Linkoln {
 	
 	public String getTextHtml() {
 		
-		//String html = "<p><table border='1' cellspacing='4' cellpadding='10'><tr><td align='center'><strong>TESTO MARCATO</strong></td></tr>";
 		String html = "<p><table class='table'><tr><td align='center'><strong>TESTO MARCATO</strong></td></tr>";
-		//String html = "<p><table class='table'><th><td>TESTO MARCATO</td></th>";
 		
 		html += "<tr><td>" + getHrefText() + "</td></tr></table>";
 		
@@ -258,7 +273,7 @@ public class Linkoln {
 	}
 
 	public String getHrefText() {
-		return hrefText;
+		return fixHtml(hrefText);
 	}
 
 	public String getEntityText() {
@@ -277,10 +292,6 @@ public class Linkoln {
 		
 		inputOriginalText = inputText;
 		
-		if(inputText.indexOf("<br>") < 0) {
-			inputText = inputText.replaceAll("\n", "<br>");
-		}
-		
 		this.inputText = inputText;
 	}
 
@@ -292,4 +303,12 @@ public class Linkoln {
 		this.debug = debug;
 	}
 
+	private String fixHtml(String text) {
+		
+		String html = text.replaceAll("\r\n", "<br>");
+		html = html.replaceAll("\n", "<br>");
+		html = html.replaceAll("\r", "<br>");
+		
+		return html;
+	}
 }

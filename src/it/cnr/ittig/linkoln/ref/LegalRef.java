@@ -2,7 +2,13 @@ package it.cnr.ittig.linkoln.ref;
 
 public abstract class LegalRef {
 
+	/**
+	 * Classe astratta che rappresenta un generico riferimento normativo
+	 * relativo ad una citazione testuale.
+	 * 
+	 */
 	
+	//Campi normalizzati che compongono il riferimento
 	protected String tipo = "";
 	
 	protected String emanante = "";
@@ -20,9 +26,10 @@ public abstract class LegalRef {
 	//il testo di questa specifica citazione
 	protected String text = "";
 	
-	//il testo complessivo all'interno di una citazione multiplo
+	//il testo complessivo all'interno di una citazione multipla
 	protected String mtext = "";
 	
+	//id del riferimento
 	protected String id = "";
 	
 	//Metodi di serializzione - Da sovrascrivere nelle varie implementazioni

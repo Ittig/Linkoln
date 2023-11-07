@@ -1,3 +1,5 @@
+-- ATTENZIONE -- il progetto Linkoln è stato aggiornato, maggiori informazioni all'indirizzo: [https://linkoln.gitlab.io](https://linkoln.gitlab.io)
+
 Linkoln nasce nell'ambito di un progetto promosso e finanziato nel 2015 dal Servizio Informatica del Senato della Repubblica e realizzato dall'Istituto di Teoria e Tecniche dell'Informazione Giuridica del CNR (ITTIG), finalizzato allo sviluppo di uno strumento per l'estrazione automatica di riferimenti normativi nazionali ed europei dai testi legislativi italiani.
 
 Linkoln è un progetto open-source sviluppato in Java, rilasciato con licenza GPL ver. 3 e disponibile sotto forma di libreria jar. La libreria può essere facilmente integrata all'interno di web applications o in applicazioni stand-alone, oppure può essere utilizzata direttamente da linea di comando.
